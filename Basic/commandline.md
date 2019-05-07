@@ -8,3 +8,7 @@
 - `$clear`:clear all code in terminal 
 - `$cp`:"copy", copy the file
 - `$rm`:delete file
+- `$curl`: c means "crawl the page" 
+```
+curl http://www.example.com
+```
