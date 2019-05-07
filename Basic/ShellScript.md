@@ -8,16 +8,17 @@
 #### 迴圈
 
 - {1..10}表示從1~10
-- do done裡面執行迴圈程式
+- do ... done 的裡面會執行程式
 
 ```
 for i in {1..10}
 do 
  echo $i
 done
+// 1,2,3,4,5,6,7,8,9,19
 ```
 
-迴圈如果會用到變數要改用`seq`
+迴圈如果會用到「變數」要改用`seq`
 
 ```
 for i in $(seq 1 $1)
@@ -31,4 +32,4 @@ done
 #### 執行shell Script
 
 - $ ./test.sh  或是 sh test.sh
-- 第一種方法要用`chmod` +x test.sh更改權限
+- 第一種方法要用`chmod` +x test.sh更改權限(`ll`可以看到權限）
