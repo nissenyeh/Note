@@ -29,6 +29,19 @@ done
 // 輸入3，可以產生1.js,2.js,3.js檔案
 ```
 
+#### 爬蟲
+
+- `curl`:可以用來獲取網站
+- [pup](https://github.com/ericchiang/pup): pup is a command line tool for processing HTML
+
+```
+curl  https://github.com/$1 | \
+      pup  'span.vcard-fullname,'\
+            'div.js-user-profile-bio,'\
+            'span.p-label,'\
+            'a[rel="nofollow me"] text{}'
+```
+
 #### 執行shell Script
 
 - $ ./test.sh  或是 sh test.sh
