@@ -10,7 +10,7 @@
 - {1..10}表示從1~10
 - do ... done 的裡面會執行程式
 
-``` other
+```shell
 for i in {1..10}
 do 
  echo $i
@@ -20,7 +20,7 @@ done
 
 迴圈如果會用到「變數」要改用`seq`
 
-``` other
+```shell
 for i in $(seq 1 $1)
 do
   touch $i.js;
@@ -34,7 +34,7 @@ done
 - `curl`:可以用來獲取網站
 - [pup](https://github.com/ericchiang/pup): pup is a command line tool for processing HTML
 
-``` other
+```shell
 curl  https://github.com/$1 | \
       pup  'span.vcard-fullname,'\
             'div.js-user-profile-bio,'\
