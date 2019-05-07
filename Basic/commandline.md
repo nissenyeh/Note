@@ -1,4 +1,6 @@
-### Commandline
+## Commandline
+
+### gerneral
 
 - `$mkdir`: "make a directory" , create a directory
 - `$touch`: Creat a new file 
@@ -8,7 +10,15 @@
 - `$clear`:clear all code in terminal 
 - `$cp`:"copy", copy the file
 - `$rm`:delete file
+
+### Web
+
 - `$curl`: c means "crawl the page" 
 ```
 curl http://www.example.com
 ```
+
+### Mode
+
+- `$ll`: a long list along with various attributes e.g. permissions, file sizes, use, group, modification time etc.
+- `chmod +x filename` : 'change mode'
