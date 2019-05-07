@@ -12,7 +12,7 @@
 - 如果圖表想要有橫向捲軸的功能，可以於外層再包div，然後設定overflow-x: scroll;（這裡是 .chartWrapper)
 
 
-```
+``` html
     <div class="chartWrapper">
       <div class="myChart">
         <canvas id="myChart"></canvas>
@@ -20,7 +20,7 @@
     </div>
 ```
 
-```
+``` css
 .chartWrapper {
   width:100%;
   overflow-x: scroll;
@@ -41,7 +41,7 @@
 - 把資料放在`data`裡面
 
 
-```
+``` javascript
 var myChart
 function render() {
   var canvas = document.getElementById('myChart').getContext('2d');
@@ -84,7 +84,7 @@ render()
 
 - 利用update()可以更新圖表，這樣避免重複繪圖
 
-```
+``` javascript
 function ChartUpdata(newYaxisData,labelName) {
   var Data = [{
     label:labelName,
@@ -99,7 +99,7 @@ function ChartUpdata(newYaxisData,labelName) {
 
 - 在`option`的`layout`的padding裡面設定
 
-```
+``` javascript
   myChart = new Chart(canvas, {
               type: 'bar',
               data: {
