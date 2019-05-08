@@ -6,7 +6,7 @@
 
 ## Frontend
 
-
+- [JavaScript](Fronted/JavaScript.md)
 
 ### 圖表
 
