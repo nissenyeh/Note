@@ -16,12 +16,12 @@ nissen = {
 const { name, age, gender }= nissen  // Mapping name has to be the same
 ```
 
-- It's helpful for getting specific data from object and if  don't like origin name of object , `renameing` is avaliale !
+- It's helpful for getting specific data from object
 
 ```Javascript
 response = { data: {…}, status: 200, statusText: "OK", headers: {…}, config: {…}, … }
 
-const { data: mydata } = response
+const { data: mydata } = response // If  don't want the origin name from object ,renameing is avaliale.
 
 console.log(mydata) // data
 ```
