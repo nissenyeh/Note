@@ -20,7 +20,9 @@ const { name, age, gender }= nissen  // Mapping name has to be the same
 
 ```Javascript
 response = { data: {…}, status: 200, statusText: "OK", headers: {…}, config: {…}, … }
-const { data:mydata } = response
+
+const { data: mydata } = response
+
 console.log(mydata) // data
 ```
 
