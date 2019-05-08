@@ -13,21 +13,14 @@ nissen = {
   gender:2
 }
 
-const {name, age, gender}= nissen  // Mapping name has to be the same
+const { name, age, gender }= nissen  // Mapping name has to be the same
 ```
 
-- It's helpful for getting specific data from object
+- It's helpful for getting specific data from object and if  don't like origin name of object , `renameing` is avaliale !
 
 ```Javascript
-response = {data: {…}, status: 200, statusText: "OK", headers: {…}, config: {…}, …}
-const {data} = response
-```
-
-- If you don't like origin name of object , renameing is avaliale!
-
-```Javascript
-response = {data: {…}, status: 200, statusText: "OK", headers: {…}, config: {…}, …}
-const {data:mydata} = response
+response = { data: {…}, status: 200, statusText: "OK", headers: {…}, config: {…}, … }
+const { data:mydata } = response
 console.log(mydata) // data
 ```
 
