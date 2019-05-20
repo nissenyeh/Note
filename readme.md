@@ -5,7 +5,7 @@
 - [Shell Script](Basic/ShellScript.md)
 
 # JavaScript
-- [實用技巧：Pratical Skills](JavaScript/Destructuring.md)
+- [實用技巧：Pratical Skills](JavaScript/praticalSkills.md)
 - [實用函式：Pratical Function](JavaScript/praticalFunction.md)
 
 ### 圖表
