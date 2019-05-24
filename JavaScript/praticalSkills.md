@@ -2,7 +2,7 @@
 
 ### Pratical Skills
 
-## Object destructuring
+## Object destructuring 物件解構
 
 - Mapping name must to be the `same`
 
@@ -26,7 +26,7 @@ const { data: mydata } = response // If  don't want the origin name from object 
 console.log(mydata) // data
 ```
 
-## Array destructuring
+## Array destructuring 陣列解構
 
 - Mapping name `doesn't have to` be the same
 
@@ -41,7 +41,7 @@ console.log(age) //21
 console.log(gender) //2
 ```
 
-## Spread Operator 
+## Spread Operator 展開運算子
 
 
 ```JavaScript
