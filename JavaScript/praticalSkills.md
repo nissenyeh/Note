@@ -41,6 +41,28 @@ console.log(age) //21
 console.log(gender) //2
 ```
 
+## Spread Operator 
+
+
+```JavaScript
+var a = [1, 2, 3]
+var b = [...a]  // [1,2,3]
+```
+
+```JavaScript
+var x = {
+  a:1,
+  b:2
+}
+var y = {  // y doesn't use same memory address with x object 
+  ...x
+}
+
+var z = x  // z use same memory address with x object 
+
+console.log(y==x,z==x) // false , true
+```
+
 ## Mapping without `IF`
 
 ``` JavaScript
@@ -69,4 +91,5 @@ const dicitionary = {
 var word = 'a' // a
 dicitionary[word] // 1
 ```
+
 
