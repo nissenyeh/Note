@@ -5,6 +5,7 @@
 - [Shell Script](Basic/ShellScript.md)
 
 # JavaScript
+- [Basic Knowledge](JavaScript/Basic.md)
 - [Pratical Skills](JavaScript/praticalSkills.md)
 - [Pratical Function](JavaScript/praticalFunction.md)
 - [error handling](JavaScript/errorHandling.md)
