@@ -9,6 +9,7 @@ ForEach       |      no        | X
 Map           |  return array  | Return all values by processing in the array
 Filter        |  return array  | Only return qualified values in the array
 Find          |  return array  | Only return the first value that meets the condition in the array
+join          |  return string | Return a string with specific symbol
 
 ### For
 
@@ -83,4 +84,13 @@ var result = arr.filter( item=> item > 2); // [3,4]
 arr = [2,3,4,5]
 found = arr.find( item => item > 2)
 console.log(found);  // 3
+```
+
+### join()
+
+- return `string` with specific symbol
+
+```JavaScript
+arr = [2,3,4,5]
+newarr = arr.join(',') // 2,3,4,5
 ```

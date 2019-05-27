@@ -11,7 +11,7 @@ try {
   console.log('run：會執行')
   bug()  // a error happens  
   console.log('dont run：不會執行')  // directly go to catch and it doesn't console 'dont run' 
-} catch(error){
+} catch (error) {
   console.log(error)  // ReferenceError: bug is not defined 
 }
 
@@ -24,16 +24,16 @@ try {
 ```JavaScript
 try {
   console.log('run：會執行')
-  try{
+  try {
     console.log('run：會執行')
     bug();
     console.log('dont run：不會執行')
   }
-  catch(innerError){
+  catch (innerError) {
     throw(innerError)
   }
   console.log('dont run：不會執行')
-} catch(outerError){
+} catch (outerError){
   console.log(outerError)  // ReferenceError: bug is not defined
 }
 
