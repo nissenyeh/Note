@@ -2,6 +2,7 @@
 
 
 1. `by reference`: Object (e.g: object, array) 
+> array is a kind of JS object!
 2. `by value`: Boolean, Null, Undefined, Number, String
 
 ```JavaScript
