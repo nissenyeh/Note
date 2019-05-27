@@ -3,6 +3,7 @@
 
 - [Command line](Basic/commandline.md)
 - [Shell Script](Basic/ShellScript.md)
+- [Git](Basic/git.md)
 
 # JavaScript
 - [Basic Knowledge](JavaScript/Basic.md)
