@@ -19,6 +19,8 @@ try {
 // ReferenceError: bug is not defined
 ```
 
+- Error messages can be passed in multiple layers 錯誤訊息可以多層傳遞
+
 ```JavaScript
 try {
   console.log('run：會執行')
