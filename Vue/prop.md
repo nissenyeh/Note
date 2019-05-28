@@ -24,8 +24,8 @@ export default class App extends Vue {
 ```
 
 ## 子層承接變數、向外啟動函式的方法
-  - @Prop(String) customname!: string; 可以把父層傳進來變數接下來
-  - this.$emit('change', this.response) 可以把父層的函式啟用，並把`response`傳到外層
+  - `@Prop(String) customname!: string` 可以把父層傳進來變數接下來
+  - `this.$emit('change', this.response)` 可以把父層的函式啟用，並把`response`傳到外層
 
 ``` Js
 <template>
