@@ -3,22 +3,23 @@
 
 - [Command line](Basic/commandline.md)
 - [Shell Script](Basic/ShellScript.md)
-- [Git](Basic/git.md)
+- [Git Intro](Basic/git.md)
 
 # JavaScript
-- [Basic Knowledge](JavaScript/Basic.md)
-- [Pratical Skills](JavaScript/praticalSkills.md)
-- [Pratical Function](JavaScript/praticalFunction.md)
-- [error handling](JavaScript/errorHandling.md)
+
+- [JavaScript Foundation](JavaScript/Basic.md)
+- [Object destructuring, Array destructuring, Spread Operator, Mapping ](JavaScript/praticalSkills.md)
+- [ForEach, Map, Filter, Find, join  ](JavaScript/praticalFunction.md)
+- [error handling: Try catch](JavaScript/errorHandling.md)
 
 # Python
 
-- [Basic](Python/basic.md)
-- 
+- [Python Foundation](Python/basic.md)
+- [Numpy Intro](Python/numpy.md)
 
 # Vue 
 
-- [Prop and emit](Vue/prop.md)
+- [Props and emit](Vue/prop.md)
 
 ### Charts
 - [Chart Survey](Fronted/ChartSurvey.md)：簡單比較ApexCharts、ECharts、Hichart、ChartJS
