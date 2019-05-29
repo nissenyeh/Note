@@ -1,19 +1,18 @@
 # Python
 
-Python分為2.0, 3.0版本
+Python 分為2.0, 3.0版本，以下為 3.0 版本的筆記
 
 ## 基礎常用函式
 
-
 - print():印出裡面的資料
-> 在2.x可以不用括號，但在3.x中則是print()是函式
-
+> 在2.x可以不用括號，但在3.x中print()是函式
 - input(''):請使用者提供資料
 
 ```python
 age = input('How old are you?')
 print('I am ' + age + ' years old')
 ```
+# 常用語法
 
 ### If ... else
 
@@ -69,7 +68,7 @@ print(addNum(1,2)) // 3
 
 
 
-## 數據類型：
+# 基本數據類型：
 
 - 有序資料：
   - 列表(list)：有序的元素列表
@@ -79,6 +78,7 @@ print(addNum(1,2)) // 3
   - 集合(set)：只具有key的無序物件（不等於list)
 
 
+## 有序資料
 
 ### 列表:[list]
 
@@ -103,7 +103,8 @@ len(lists) # [3]
 tuples = ('tupleA','tupleB')
 print(tuples[0]) // tupleA
 ```
-## 物件數據
+
+## 無序資料
 
 ### 字典:{dictionary}
 
