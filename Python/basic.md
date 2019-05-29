@@ -7,7 +7,7 @@ Python 分為2.0, 3.0版本，以下為 3.0 版本的筆記
 ### 印出資料 print()
 > 在2.x可以不用括號，但在3.x中print()是函式
 
-- print.format: 可以預設列印格式
+- `print("{} {} ".format("",""))`: 可以預設列印格式
 
 ```python
 "{} {}".format("hello", "world")    # 不设置指定位置，按默认顺序
@@ -17,17 +17,17 @@ Python 分為2.0, 3.0版本，以下為 3.0 版本的筆記
  
 ```
 
-- print("",end=""): 讓輸出換行
+- `print("",end=' ')`: print預設會換行，end意味末尾不換行加空格。
 
 ``` py
 for i in range(5):
-  print(i,end='')
+  print(i,end=' ')
 ## 1 2 3 4 5
 ```
 
 ### 輸入資料 input()
 
-- input(''):請使用者提供資料
+- `input('')`:請使用者提供資料
 
 ```python
 age = input('How old are you?')
