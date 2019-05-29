@@ -11,6 +11,10 @@
 - [Pratical Function](JavaScript/praticalFunction.md)
 - [error handling](JavaScript/errorHandling.md)
 
+# Python
+
+- [Basic](Python/basic.md)
+
 # Vue 
 
 - [Prop and emit](Vue/prop.md)
