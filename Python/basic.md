@@ -4,8 +4,29 @@ Python 分為2.0, 3.0版本，以下為 3.0 版本的筆記
 
 ## 基礎常用函式
 
-- print():印出裡面的資料
+### 印出資料 print()
 > 在2.x可以不用括號，但在3.x中print()是函式
+
+- print.format: 可以預設列印格式
+
+```python
+"{} {}".format("hello", "world")    # 不设置指定位置，按默认顺序
+## >> 'hello world'
+"{0} {1}".format("hello", "world")  # 设置指定位置
+## >> 'hello world'
+ 
+```
+
+- print("",end=""): 讓輸出換行
+
+``` py
+for i in range(5):
+  print(i,end='')
+## 1 2 3 4 5
+```
+
+### 輸入資料 input()
+
 - input(''):請使用者提供資料
 
 ```python
