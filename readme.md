@@ -31,6 +31,7 @@ My notes on web development
 
 - [Python Numpy](Python/numpy.md)
 - [Python Panda](Python/panda.md)
+- [Python matplotlib](Python/matplotlib.md)
 
 ## Vue 
 
