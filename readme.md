@@ -8,6 +8,8 @@ My notes on web development
 - [Command line](Basic/commandline.md)
 - [Shell Script](Basic/ShellScript.md)
 - [Git Intro](Basic/git.md)
+- [installation](Basic/install.md)
+- [Browser](Basic/browser.md)
 
 ## JavaScript
 
@@ -23,6 +25,7 @@ My notes on web development
 ## Python
 
 - [Python Foundation](Python/basic.md)
+- [Python Advance](Python/advance.md)
 - [Numpy Intro](Python/numpy.md)
 
 ## Vue 

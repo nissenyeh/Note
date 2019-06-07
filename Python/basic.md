@@ -49,7 +49,7 @@ else:
   print('not adult')
 ```
 
-### for ... in
+### for ... in list
 
 python的if...else 
 - 後面都要有`冒號:`

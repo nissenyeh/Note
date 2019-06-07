@@ -99,7 +99,7 @@ function ChartUpdata(newYaxisData,labelName) {
 
 - 在`option`的`layout`的padding裡面設定
 
-``` javascript
+``` js
   myChart = new Chart(canvas, {
               type: 'bar',
               data: {
@@ -135,7 +135,38 @@ function ChartUpdata(newYaxisData,labelName) {
 render()
 ```
 
+#### 如何顯示ChartJS數字顯示
+
+- [chartjs-plugin-datalabels](https://chartjs-plugin-datalabels.netlify.com)
+
+
+``` js
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+```
+
+#### 遇過的問題
+
+- 如何使用面積填滿效果:改變dataset的fill屬性
+- 如何使用直線而非曲線:讓dataset的lineTension = 0
+- 如何使用雙Y軸：在dataset設定yAxisID，然後再option設定yAxes
+
+``` js
+  options:{
+    scales: {
+      yAxes: [{
+        id: 'yAxisID-a',
+        position: 'left',
+      }, {
+        id: 'yAxisID-b',
+        position: 'right',
+      }]
+    }
+  }
+```
+
+
+
 #### Plugin
 
-- [chartjs-plugin-labels](https://github.com/emn178/chartjs-plugin-labels)：可以用來顯示圖表的數字
+- [chartjs-plugin-labels](https://github.com/emn178/chartjs-plugin-labels)：可以用來顯示圖表的數字（可以不使用了）
 
