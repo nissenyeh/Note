@@ -26,7 +26,11 @@ My notes on web development
 
 - [Python Foundation](Python/basic.md)
 - [Python Advance](Python/advance.md)
-- [Numpy Intro](Python/numpy.md)
+
+### data analysis
+
+- [Python Numpy](Python/numpy.md)
+- [Python Panda](Python/panda.md)
 
 ## Vue 
 
