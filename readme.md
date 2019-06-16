@@ -17,6 +17,7 @@ My notes on web development
 - [Object destructuring, Array destructuring, Spread Operator, Mapping ](JavaScript/praticalSkills.md)
 - [ForEach, Map, Filter, Find, join  ](JavaScript/praticalFunction.md)
 - [error handling: Try catch](JavaScript/errorHandling.md)
+- [Question](JavaScript/Question.md)
 
 ### Charts
 - [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
