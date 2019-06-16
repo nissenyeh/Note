@@ -14,7 +14,8 @@ console.log(arr)  // [0, 2, 3]
 
 ### 物件（Object）是什麼？
 
-- 定義：物件是記憶體中的資料，並藉由參考（變數）的方式進行拜訪。（因此用記憶體參考的資料，都可被稱為物件）
+- 定義：In computer science, an object is a value in memory which is
+possibly referenced by an identifier. 物件是記憶體中的資料，並藉由參考（變數）的方式進行拜訪。（因此用記憶體參考的資料，都可被稱為物件）
 - 因為JS是物件導向的程式，因此所有的JS資料都是Object（包含undefined , 1 , '你好' 都是物件！）
 - 但Object也可以分類為各種`資料型態`
   - 原生型態(Primitive type)：Number,undefined, null , boolean, string, symbol
@@ -128,6 +129,7 @@ var h = $('h2') // 這樣就不會被回收掉了
 
 
 
+
 ### 函式物件 Function
 
 - 函式本身就是一種物件，並且可以被賦予屬性
@@ -157,6 +159,31 @@ window.add2.name // 也是 add2
 3. 該物件的地址被存到add中
 
 ## JS的重要概念
+
+### Hoisting 提升
+
+```js
+var tmp = 'Vue'
+function choose(){
+  console.log(tmp) 
+  let tmp = 'JS'
+  console.log(tmp)
+}
+```
+
+在Hoisting後
+
+```js
+var tmp = 'Vue'
+function choose(){
+  let tmp
+  console.log(tmp) // undefined
+  tmp = 'JS'
+  console.log(tmp) // JS
+}
+```
+
+- let 
 
 ### Scope 作用域
 
