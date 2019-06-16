@@ -94,3 +94,20 @@ console.log(found);  // 3
 arr = [2,3,4,5]
 newarr = arr.join(',') // 2,3,4,5
 ```
+
+### for of , for in 
+
+- `for of`: get object value
+- `for in`: get object property
+
+```js
+let list = [3,4,5]
+
+for (let i in list){
+  console.log(i)  // 0,1,2
+}
+
+for (let i of list){
+  console.log(i)  // 3,4,5
+}
+```

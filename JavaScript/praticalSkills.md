@@ -92,4 +92,33 @@ var word = 'a' // a
 dicitionary[word] // 1
 ```
 
+## Arr Function 箭頭函式
 
+```JS
+var f = function a() {
+  return 43
+}
+```
+```js
+var f = () = > {return 43} //要記得，需要return
+var f = () = > 43 // 預設會return
+```
+
+### default parameters 預設參數
+
+```js
+var a = function(a,b=3){
+  return a+b
+}
+```
+
+### Rest parameters 其餘參數
+
+- Put rest parameters in the array
+
+```js
+function f(a,b,...args){
+  return args
+}
+f(1,2,3,4,5,6) // [3,4,5,6]
+```
