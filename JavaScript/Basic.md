@@ -158,7 +158,7 @@ window.add2.name // 也是 add2
 
 ## JS的重要概念
 
-### Scope的概念
+### Scope 作用域
 
 - var: function scope
 - let: block scope
@@ -218,4 +218,37 @@ var o = myFunc() // 並得到 {GetCount()}
 o.GetCount() ; 1
 o.GetCount() ; 2
 o.GetCount() ; 3
+```
+
+
+### 變數與常數
+
+- var : function scope
+  - 只在function內部存活
+  - 如果在外面就會污染根物件
+- let: block scope
+  - 只在{ }內部存活
+- const: block scope
+  - 宣告一個`唯獨`的變數，作用域範圍跟let相同（不是全域！）
+
+> 可以用let開發就不要用var
+
+```js
+wow = 1 
+// window.wow = 1 但不會產生變數
+```
+```js
+var wow = 1
+// window.wow = 1 產生變數且污染根物件
+
+```
+```js
+function main(){
+  var a = 1
+  if(a==1){
+    a=2
+    var b=1 //b的範圍不是在{}內，而是在function內都是！
+  }
+  b=2
+}
 ```
