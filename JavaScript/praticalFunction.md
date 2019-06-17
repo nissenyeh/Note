@@ -70,7 +70,7 @@ var result2 = arr.Map ((item, index)=> ({
   }))
 ```
 - if using {} , there is`return`
-- if useing (), there is no
+- if useing (), there is no `return`
 
 ### Filter()
 
