@@ -45,8 +45,7 @@ console.log(rule.measure()) // 60000
 
 ### Object
 
-- `this` - > the environment which run function
-
+- this -> refer to the room()
 ```JS
 var room = {
   height: 200,
@@ -57,6 +56,10 @@ var room = {
 } 
 console.log(room.measure()) // 60000
 ```
+
+
+- this -> refer to the global
+
 ```JS
 var stolenFunction = room.measure
 console.log(stolenFunction())   //NAN
