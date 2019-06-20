@@ -1,8 +1,6 @@
-### New
+## Constructor
 
-### Create a Object
-
-#### Function constructor
+### Function constructor
 
 ```JS
 function rooms(){
@@ -21,7 +19,7 @@ console.log(rule.measure)  // [Function]
 console.log(rule.measure())  // 60000
 ```
 
-#### Class constructor
+### Class constructor
 
 
 - `get` -> set a property
@@ -45,7 +43,7 @@ console.log(rule.measure) // 60000
 console.log(rule.measure()) // 60000
 ```
 
-#### Object
+### Object
 
 - `this` - > the environment which run function
 
