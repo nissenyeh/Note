@@ -1,6 +1,6 @@
-# What is `this`
+# What is `this` ?
 
-### Question
+### Question time:
 
 ```js
 var obj = {
@@ -15,9 +15,9 @@ stolenFunction() // this -> `window`
 ```
 Please explain why the values of the last two lines of the function are different ?
 
-### All function is `func.call(environment, p1, p2)`
+### Every function is equal to`func.call(environment, p1, p2)`
 
- `func.call(environment, p1, p2)` is normal way to call function
+Actually , `func.call(environment, p1, p2)` is normal way to call function but func() or object.child.func()
 
 so: 
 
@@ -27,7 +27,6 @@ so:
 Example:
 
 ```js
-
 obj.print.call(window) // window
 obj.print.call(obj) // obj
 ```
@@ -38,7 +37,7 @@ If the context you pass is null or undefined, then the window object is the defa
 obj.print.call()  // window, not obj
 ```
 
-## What is `this`
+## What is `this`?
 
  `func.call(environment, p1, p2)`
 
