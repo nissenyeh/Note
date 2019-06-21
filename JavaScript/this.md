@@ -21,8 +21,8 @@ Please explain why the values of the last two lines of the function are differen
 
 so: 
 
-`obj.print()`  is equal to `obj.print.call(obj)`
-`print()`  is equal to `print.call(window)`
+- `obj.print()`  is equal to `obj.print.call(obj)`
+- `print()`  is equal to `print.call(window)`
 
 Example:
 
