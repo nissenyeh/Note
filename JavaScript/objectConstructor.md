@@ -2,12 +2,13 @@
 
 ### Function constructor
 
+
 ```JS
 function rooms(){
   this.height = 200
   this.width = 300
-  this.measure=function(){
-    return this.height*this.width
+  this.measure = function(){
+    return this.height * this.width
   }
 }
 ```
@@ -18,6 +19,11 @@ console.log(rule) //rooms { height: 200, width: 300, measure: [Function] }
 console.log(rule.measure)  // [Function]
 console.log(rule.measure())  // 60000
 ```
+
+`const rule = new rooms()`
+
+1. `new`: Create a empty object
+2. `this`: this refers to the new object
 
 ### Class constructor
 

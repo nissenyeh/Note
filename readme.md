@@ -17,7 +17,8 @@ My notes on web development
 - [Object destructuring, Array destructuring, Spread Operator, Mapping, Arrow Functiom, default parameters,rest parameters  ](JavaScript/praticalSkills.md)
 - [ForEach, Map, Filter, Find, join, for in, for of  ](JavaScript/praticalFunction.md)
 - [error handling: Try catch](JavaScript/errorHandling.md)
-- [function Constructor, Class Constructor, Object](JavaScript/onjectConstructor.md)
+- [Constructor：function Constructor, Class Constructor, Object](JavaScript/objectConstructor.md)
+- [What is this ? ](JavaScript/this.md)
 - [Question](JavaScript/Question.md)
 
 ### Charts
