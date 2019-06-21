@@ -17,7 +17,7 @@ Please explain why the values of the last two lines of the function are differen
 
 ### Every function is equal to`func.call(environment, p1, p2)`
 
-Actually , `func.call(environment, p1, p2)` is normal way to call function but func() or object.child.func()
+Actually , `func.call(environment, p1, p2)` is normal way to call function `but` func() or object.child.func()
 
 so: 
 
