@@ -30,7 +30,10 @@ class rooms {
     this.height = 200
     this.width = 300
   }
-  get measure() {
+  get getMeasure() {
+    return this.height * this.width;
+  }
+  measureMethod() {
     return this.height * this.width;
   }
 }
@@ -39,8 +42,10 @@ class rooms {
 ```JS
 const rule = new rooms();
 console.log(rule) // rooms { height: 200, width: 300 }
-console.log(rule.measure) // 60000
-console.log(rule.measure()) // 60000
+console.log(rule.getMeasure) // 60000
+console.log(rule.getMeasure()) // is not a function
+console.log(rule.measureMethod) // function
+console.log(rule.measureMethod()) // // 60000
 ```
 
 ### Object
