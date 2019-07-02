@@ -104,6 +104,13 @@ var f = () = > {return 43} //要記得，需要return
 var f = () = > 43 // 預設會return
 ```
 
+```js
+// Eslint
+const inserted = arr.some(item => item.id === rf.id); //第一個參數不用括號，不用return 
+
+const position = arr.findIndex((item, index) => item.id > rf.id); // 兩個參數才要括號，不用return 
+```
+
 ### default parameters 預設參數
 
 ```js

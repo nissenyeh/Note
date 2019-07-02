@@ -10,6 +10,7 @@ My notes on web development
 - [Git Intro](Basic/git.md)
 - [installation](Basic/install.md)
 - [Browser](Basic/browser.md)
+- [Web Secrity](Basic/webSecrity.md)
 
 ## JavaScript
 
