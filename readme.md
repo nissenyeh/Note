@@ -22,10 +22,6 @@ My notes on web development
 - [What is `this` ? ](JavaScript/this.md)
 - [Question](JavaScript/Question.md)
 
-### Charts
-- [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
-- [ChartJS](Fronted/ChartJS.md)
-
 ## Python
 
 - [Python Foundation](Python/basic.md)
@@ -37,9 +33,28 @@ My notes on web development
 - [Python Panda](Python/panda.md)
 - [Python matplotlib](Python/matplotlib.md)
 
+
+
+# Fronted End 
+
 ## Vue 
 
 - [Props and emit](Vue/prop.md)
+
+
+
+### Charts
+- [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
+- [ChartJS](Fronted/ChartJS.md)
+
+
+
+# Back End 
+
+## Django 
+
+- [Environment Setting](Backend/Django.md)
+
 
 
 
