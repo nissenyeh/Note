@@ -15,6 +15,7 @@ My notes on web development
 ## JavaScript
 
 - [JavaScript Foundation](JavaScript/Basic.md)
+- [JavaScript Prototype](JavaScript/prototype.md)
 - [Object destructuring, Array destructuring, Spread Operator, Mapping, Arrow Functiom, default parameters,rest parameters  ](JavaScript/praticalSkills.md)
 - [ForEach, Map, Filter, Find, join, for in, for of  ](JavaScript/praticalFunction.md)
 - [error handling: Try catch](JavaScript/errorHandling.md)
