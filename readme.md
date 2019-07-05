@@ -1,7 +1,7 @@
 
 ## Notes
 
-My notes on web development
+My notes about soft developer
 
 ## Programming Foundation
 
@@ -54,7 +54,7 @@ My notes on web development
 
 ## Django 
 
-- [Environment Setting and connect to server](Backend/Django.md)
+- [Django Setting and Base Connection](Backend/Django.md)
 
 
 ## Database
