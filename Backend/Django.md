@@ -1,6 +1,5 @@
 	
-  - [Chinese Note](#Django介紹) 
-  - [English Note](#Django) 
+[English Note](#Django)  / [Chinese Note](#Django介紹) 
 
 
 # Django
