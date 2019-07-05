@@ -54,9 +54,12 @@ My notes on web development
 
 ## Django 
 
-- [Environment Setting](Backend/Django.md)
+- [Environment Setting and connect to server](Backend/Django.md)
 
 
+## Database
+
+- [Database Basic](Backend/Basic_Database.md)
 
 
 ### Diary
