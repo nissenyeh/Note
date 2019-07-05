@@ -16,9 +16,9 @@ My notes about soft developer
 
 
 
-# Fronted End 
+## Fronted End 
 
-## Vue 
+### Vue 
 
 - [Props and emit](Vue/prop.md)
 
@@ -30,19 +30,19 @@ My notes about soft developer
 
 
 
-# Back End 
+## Back End 
 
-## Django 
+### Django 
 
 - [Django Setting and Base Connection](Backend/Django.md)
 
 
-## Database
+### Database
 
 - [Database Basic](Backend/Basic_Database.md)
 
 
-# Programming Foundation
+## Programming Foundation
 
 - [Command line](Basic/commandline.md)
 - [Shell Script](Basic/ShellScript.md)
@@ -52,7 +52,7 @@ My notes about soft developer
 - [Web Secrity](Basic/webSecrity.md)
 
 
-# Python
+## Python
 
 - [Python Foundation](Python/basic.md)
 - [Python Advance](Python/advance.md)
