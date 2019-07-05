@@ -3,15 +3,6 @@
 
 My notes about soft developer
 
-## Programming Foundation
-
-- [Command line](Basic/commandline.md)
-- [Shell Script](Basic/ShellScript.md)
-- [Git Intro](Basic/git.md)
-- [installation](Basic/install.md)
-- [Browser](Basic/browser.md)
-- [Web Secrity](Basic/webSecrity.md)
-
 ## JavaScript
 
 - [JavaScript Foundation](JavaScript/Basic.md)
@@ -22,17 +13,6 @@ My notes about soft developer
 - [Constructor：function Constructor, Class Constructor, Object](JavaScript/objectConstructor.md)
 - [What is `this` ? ](JavaScript/this.md)
 - [Question](JavaScript/Question.md)
-
-## Python
-
-- [Python Foundation](Python/basic.md)
-- [Python Advance](Python/advance.md)
-
-### data analysis
-
-- [Python Numpy](Python/numpy.md)
-- [Python Panda](Python/panda.md)
-- [Python matplotlib](Python/matplotlib.md)
 
 
 
@@ -60,6 +40,29 @@ My notes about soft developer
 ## Database
 
 - [Database Basic](Backend/Basic_Database.md)
+
+
+# Programming Foundation
+
+- [Command line](Basic/commandline.md)
+- [Shell Script](Basic/ShellScript.md)
+- [Git Intro](Basic/git.md)
+- [installation](Basic/install.md)
+- [Browser](Basic/browser.md)
+- [Web Secrity](Basic/webSecrity.md)
+
+
+# Python
+
+- [Python Foundation](Python/basic.md)
+- [Python Advance](Python/advance.md)
+
+### data analysis
+
+- [Python Numpy](Python/numpy.md)
+- [Python Panda](Python/panda.md)
+- [Python matplotlib](Python/matplotlib.md)
+
 
 
 ### Diary
