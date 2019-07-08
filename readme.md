@@ -34,7 +34,8 @@ My notes about soft developer
 
 ### Django 
 
-- [Django Setting and Base Connection](Backend/Django.md)
+- [Django Setting and Base Connection](Backend/Django_setting.md)
+- [Model, Serialization and View](Backend/Django_basic.md) 
 
 
 ### Database
