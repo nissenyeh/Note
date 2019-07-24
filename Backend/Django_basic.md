@@ -3,8 +3,9 @@
 
 推薦資源：[Django Girls 學習指南](https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/django/models.html)
 
+## REST framework
 
-使用`rest_framework`套件
+- REST提供viewsets,ModelsSerializer方便的建構API
 
 - Model：跟資料庫溝通
 - Serialization：把Model的資料序列化，讓View可以用（Model跟View的溝通橋樑）
@@ -75,6 +76,27 @@ class MusicSerializer(serializers.ModelSerializer):
 - `fields`當中可以設定JSON格式有哪些屬性。
 
 
+### 複雜的JSON格式
+
+```py
+class CaseSerializer(serializers.ModelSerializer):
+    disease = DiseaseNameSerializer()
+    test_disease = DiseaseNameSerializer()
+    symptoms = serializers.SerializerMethodField()
+    PEs = serializers.SerializerMethodField()
+    RFs = serializers.SerializerMethodField()
+```
+- SerializerMethodField() = get_XXX
+```py
+  def get_symptoms(self, obj):
+      locale = self.context['request'].query_params.get('locale', 'zh_cn')
+      queryset = Case.objects.symptoms(pk=obj.id, locale=locale)
+      print(Case.objects)
+      return queryset
+```
+
+
+
 ## Views：當URL被分過來，看是POST/GET然後去跟MODEL找資料！
 
 
@@ -117,3 +139,57 @@ Database.objects.distinct()   | 去重複 |
 - __icontains 不在乎大小寫：Database.objects.filter(name__icontains="e") 
 
 - querySet.distinct() 去重複
+
+
+#### Shell
+
+`python manage.py shell`
+
+```py
+from apps.data-mangers.models import Sand.Case
+Sand.objects.all() // 可以看到Sand class有的所有的物件
+Sand.object.filter(id=666),values('sand_diseases')  // 可以看到sand_diseases數值
+sand.object.create(disease_id=7,case_id=666) //創建資料
+```
+
+#### ManyToMany 欄位
+
+- 一個欄位如果是`manyTomany`可以用ManyToManyField去寫，然後透過一個`中介`的model去連到另一個
+
+```py
+class Case(models.Model):
+  sand_diseases = models.ManyToManyField(DiseaseMaster, related_name='sands', through="Sand")
+
+  class Meta:
+      db_table = "case"
+
+
+class Sand(models.Model):
+    disease = models.ForeignKey(DiseaseMaster, on_delete=models.CASCADE)
+    case = models.ForeignKey(Case, related_name='sands', on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = "case_sand"
+
+
+class DiseaseMaster(models.Model):
+    master_dis_id = models.PositiveIntegerField(primary_key=True)
+    term_name = models.CharField(max_length=255, db_index=True)
+    status = models.PositiveIntegerField()
+    icd10 = models.CharField(max_length=255, null=True, db_index=True)
+    source = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    objects = DiseaseMasterManager()
+
+    class Meta:
+        db_table = "disease_master"
+```
+
+- 在中介的model新增資料
+
+```
+import Sand from apps.....
+Sand.objects.create(master_dis_id=1, case_id=2) 
+```

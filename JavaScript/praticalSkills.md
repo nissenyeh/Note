@@ -23,6 +23,9 @@ response = { data: {…}, status: 200, statusText: "OK", headers: {…}, config:
 
 const { data: mydata } = response // If  don't want the origin name from object ,renameing is avaliale.
 
+
+const { data: mydata } : { data: string} = response // if you want interdace, that's fine
+
 console.log(mydata) // data
 ```
 
