@@ -18,6 +18,8 @@ My notes about soft developer
 
 ## Fronted End 
 
+- [localStorage, sessionStorage](Fronted/Storage.md)
+
 ### Vue 
 
 - [Props and emit](Vue/prop.md)
