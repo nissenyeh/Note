@@ -1,6 +1,10 @@
 
 ### Regular Expression
 
+ `判斷 ? a : b`
+- 如果判斷為true，就執行a程式，否則執行b程式 
+
+
 
 ```js
 const book = 1 
