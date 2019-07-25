@@ -11,6 +11,7 @@ My notes about soft developer
 - [ForEach, Map, Filter, Find, join, for in, for of  ](JavaScript/praticalFunction.md)
 - [error handling: Try catch](JavaScript/errorHandling.md)
 - [Constructor：function Constructor, Class Constructor, Object](JavaScript/objectConstructor.md)
+- [Promise](JavaScript/promise.md)
 - [What is `this` ? ](JavaScript/this.md)
 - [Question](JavaScript/Question.md)
 
