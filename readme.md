@@ -20,7 +20,7 @@ My notes about soft developer
 
 ## Fronted End 
 
-- [localStorage, sessionStorage](Fronted/Storage.md)
+- [token ,localStorage and sessionStorage](Fronted/token.md)
 
 ### Vue 
 
