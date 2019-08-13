@@ -38,7 +38,7 @@
 
 ### When Grid is useless (不能用 Grid 的時候)
 
-- 例如大小在tag自己的屬性上
+- when you have to modify size in tag's `src`
 
 #### Dont watch screen Width (不用監測螢幕寬度時)
 
@@ -49,7 +49,7 @@
 </el-dialog>
 ```
 
-- 利用 `Regular Expression` + `window.innerWidth`
+- Use `Regular Expression` + `window.innerWidth`
 
 ``` html
 <el-dialog
