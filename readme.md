@@ -21,11 +21,12 @@ My notes about soft developer
 ## Fronted End 
 
 - [token ,localStorage and sessionStorage](Fronted/token.md)
+- [命名問題收集（更新）](Fronted/Naming.md)
 
 ### Vue 
 
 - [Props and emit](Vue/prop.md)
-
+- [RWD with Vue](Vue/Rwd.md)
 
 
 ### Charts
