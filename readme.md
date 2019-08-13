@@ -1,7 +1,8 @@
 
 ## Notes
 
-My notes about soft developer
+My notes about software development 
+我的軟體開發筆記（持續更新）
 
 ## JavaScript
 
