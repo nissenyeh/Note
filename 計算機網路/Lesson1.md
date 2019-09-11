@@ -25,9 +25,11 @@
 
 只要是連結網路的末端設備(end system)都可以叫做host（例如：PC、Server、phone）
 
-Communication link:有限fiber、無限radio、staellite（衛星）
 
-transmission rate ：bandwidth頻寬，去ISP購買服務時，要注意他的「頻寬」是專屬頻寬還是共享頻寬。如果是共享頻寬，可能會有很多人一起用，所以也不會很快。
+
+### 頻寬(bandwidth)是什麼？
+
+指訊號所占據的頻帶寬度，通常頻寬(bandwidth)愈大網速有機會愈高（但不保證）。去ISP購買服務時，要注意他的「頻寬」是專屬頻寬還是共享頻寬。如果是共享頻寬，可能會有很多人一起用，所以也不會很快。
 
 ### 路由（Router）是什麼?
 
