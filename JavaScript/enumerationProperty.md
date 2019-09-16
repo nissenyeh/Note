@@ -4,13 +4,13 @@
 #### Proprty 屬性
 
 1. self property 自有屬性可以分成
-  -  IsEnumerable(可枚舉): 可使用 Object.keys(obj), for ... in 
+  -  IsEnumerable(可枚舉): 可使用 Object.keys(obj), for ... in 獲取
   -  not Nnumerable(不可枚舉)
 
 
 
 2. prototype from prototype 
-  - IsEnumerable 可枚舉:  可使用 for ... in 
+  - IsEnumerable 可枚舉:  可使用 for ... in 獲取
   - not Nnumerable 不可枚舉
 
 > getOwnPropertyNames: get all property from object 
