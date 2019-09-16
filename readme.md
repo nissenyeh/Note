@@ -10,6 +10,7 @@ My notes about software development
 - [JavaScript Prototype](JavaScript/prototype.md)
 - [Object destructuring, Array destructuring, Spread Operator, Mapping, Arrow Functiom, default parameters,rest parameters  ](JavaScript/praticalSkills.md)
 - [ForEach, Map, Filter, Find, join, for in, for of  ](JavaScript/praticalFunction.md)
+- [Enumeration: Objct.keys(), Object.getOwnPropertyNames(), Object.propertyIsEnumerable(),for in](JavaScript/enumerationProperty.md)
 - [error handling: Try catch](JavaScript/errorHandling.md)
 - [Constructor：function Constructor, Class Constructor, Object](JavaScript/objectConstructor.md)
 - [Promise](JavaScript/promise.md)
