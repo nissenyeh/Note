@@ -3,13 +3,12 @@
 
 #### Proprty 屬性
 
-1. self property 自有屬性可以分成
+1. self property 自有屬性
   -  IsEnumerable(可枚舉): 可使用 Object.keys(obj), for ... in 獲取
   -  not Nnumerable(不可枚舉)
 
 
-
-2. prototype from prototype 
+2. prototype from prototype has 繼承屬性
   - IsEnumerable(可枚舉):  可使用 for ... in 獲取
   - not Nnumerable(不可枚舉)
 
