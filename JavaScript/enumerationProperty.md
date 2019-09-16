@@ -10,8 +10,8 @@
 
 
 2. prototype from prototype 
-  - IsEnumerable 可枚舉:  可使用 for ... in 獲取
-  - not Nnumerable 不可枚舉
+  - IsEnumerable(可枚舉):  可使用 for ... in 獲取
+  - not Nnumerable(不可枚舉)
 
 > getOwnPropertyNames: get all property from object 
   
