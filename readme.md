@@ -63,7 +63,7 @@ My notes about software development
 
 ### Computer network 台大計算機網路課程（筆記）
 
-- [基本名詞介紹：ISP、Router、Host、Packet](計算機網路/Lesson1.md)
+- [基本名詞介紹：ISP、Router、Host、Packet,Circuit switching, Packet switching](計算機網路/基本網路概論.md)
 
 ## Python
 
