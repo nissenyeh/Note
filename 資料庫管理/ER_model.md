@@ -87,7 +87,7 @@ ER model主要分為三個部分：
 一個Entity裡面會有各種屬性，例如ID、姓名、年齡，該資料可能是。
 1. 識別屬性（Identifier Attributes）
 
-Identifier是用來唯一識別的獨特欄位，Identifier可能有多種選擇，例如身分證、名字、地址、手機通常都很獨特，可以當成Identifier。但是因為名字、地址、手機可能都會改，因此身分證會是相對更好的選擇。
+Identifier是用來唯別的獨特欄位，Identifier可能有多種選擇，例如身分證、名字、地址、手機通常都很獨特，可以當成Identifier。但是因為名字、地址、手機可能都會改，因此身分證會是相對更好的選擇。其中，`Primiary Key`是資料表中唯一不會更改的「主鍵」。
 
 ### 如何挑選好的Key？
 
