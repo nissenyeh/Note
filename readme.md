@@ -39,15 +39,12 @@ My notes about software development
 
 ## Back End 
 
+- [Database Basic](Backend/Basic_Database.md)
+
 ### Django 
 
 - [Django Setting and Base Connection](Backend/Django_setting.md)
 - [Model, Serialization and View](Backend/Django_basic.md) 
-
-
-### Database
-
-- [Database Basic](Backend/Basic_Database.md)
 
 
 ## Programming Foundation
@@ -65,6 +62,10 @@ My notes about software development
 
 - [基本名詞介紹：ISP、Router、Host、Packet 09/18](計算機網路/基本網路概論.md)
 - [Circuit switching, Packet switching, 五個網路分層 09/25](計算機網路/網路傳輸.md)
+
+### 台大計算資料庫管理（筆記）
+
+- [ER model:Entury、Relationship、Attribute 09/26](資料庫管理/ER_model.md)
 
 ## Python
 
