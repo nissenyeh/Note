@@ -108,12 +108,12 @@ Identifier是用來唯別的獨特欄位，Identifier可能有多種選擇，例
 
 ### 資料類型
 
-VARCHAR2：多國語系，通常會存這種
-CHAR：
-BLOP：例如圖片
-NUMBER
-DATE
-CLOB
+- VARCHAR2：多國語系，通常會存這種
+- CHAR：
+- BLOP：例如圖片
+- NUMBER
+- DATE
+- CLOB
 
 ### 資料設定
 
