@@ -15,8 +15,9 @@
 ### Server
 
 - `$ssh nissen@XXX.XXX.XXX.XXX`: login in specific IP
-- `$scp nissen@XXX.XXX.XXX.XXX`:/remote/path ./local/path :download file from another linux
+- `$scp -r nissen@XXX.XXX.XXX.XXX`:/remote/path ./local/path :download file from another linux
 > scp: Secure Copy Protocol
+> -r : Copy files recursively
 - `$find -name 'file-name'`:search file
 
 ### Web
