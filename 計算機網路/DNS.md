@@ -11,7 +11,7 @@
 - 會去 com DNS server 去找amazon.com DNS server在哪
 - 會去 amazon.com DNS server 去找到www.amazon.com 的IP是什麼
 
-## 不同Query的路徑
+### 不同Query的路徑
 
 - iterated query:
 
