@@ -10,6 +10,13 @@
 - `$clear`:clear all code in terminal 
 - `$cp`:"copy", copy the file
 - `$rm`:delete file
+ 
+
+### Server
+
+- `$ssh nissen@XXX.XXX.XXX.XXX`: login in specific IP
+- `$scp nissen@XXX.XXX.XXX.XXX`:/remote/path ./local/path :download file from another linux
+- `$find -name 'file-name'`:search file
 
 ### Web
 
