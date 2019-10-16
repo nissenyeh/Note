@@ -64,8 +64,9 @@ My notes about software development
 - [Circuit switching, Packet switching 09/25](計算機網路/網路傳輸.md)
 - [五個網路分層:Application layer(HTTP), transport layer(TCP,UDP) 10/02](計算機網路/網路分層.md)
 > 等待上傳PPT的補充資料
-- [DNS](計算機網路/DNS.md)
-- [P2P & Client-Server Structure](計算機網路/P2P&CS.md)
+- [DNS](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
+- [P2P & Client-Server Structure](計算機網路/P2P&CS.md):
+Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 ### 台大計算資料庫管理（筆記）
 

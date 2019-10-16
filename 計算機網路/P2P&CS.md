@@ -1,7 +1,4 @@
 
-
-Client-Server 和 P2P 架構是 host 常見的兩種互動關係
-
 # Client-Server Architecture
 
 藉由Client去尋找Server的方式，把Server的檔案下載下來。
