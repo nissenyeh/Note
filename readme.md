@@ -63,8 +63,8 @@ My notes about software development
 - [基本名詞介紹：ISP、Router、Host、Packet 09/18](計算機網路/基本網路概論.md)
 - [Circuit switching, Packet switching 09/25](計算機網路/網路傳輸.md)
 - [五個網路分層:Application layer(HTTP), transport layer(TCP,UDP) 10/02](計算機網路/網路分層.md)
-
 > 等待上傳PPT的補充資料
+- [DNS](計算機網路/DNS.md)
 
 ### 台大計算資料庫管理（筆記）
 
