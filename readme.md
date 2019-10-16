@@ -60,13 +60,12 @@ My notes about software development
 
 ### Computer network 台大計算機網路課程（筆記）
 
-- [基本名詞介紹：ISP、Router、Host、Packet 09/18](計算機網路/基本網路概論.md)
-- [Circuit switching, Packet switching 09/25](計算機網路/網路傳輸.md)
-- [網路架構（Network Architecture）:Application layer(HTTP), transport layer(TCP,UDP) 10/02](計算機網路/網路分層.md): 網路架構（Network Architecture）分成了五個層次
-
-- [DNS](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
-- [P2P & Client-Server Structure](計算機網路/P2P&CS.md):
+- [基本名詞介紹](計算機網路/基本網路概論.md)：ISP、Router、Host、Packet 09/18
+- [封包傳遞的方式](計算機網路/網路傳輸.md)：Circuit switching, Packet switching 09/25
+- [網路架構(Network Architecture)](計算機網路/網路分層.md): 網路架構的五個層次、介紹 Application layer(HTTP), transport layer(TCP,UDP)
+- [程式架構(Application Architecture)與常見的關係](計算機網路/P2P&CS.md):
 Client-Server 和 P2P 架構是 host 常見的兩種互動關係
+- [域名系統(DNS)](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
 
 ### 台大計算資料庫管理（筆記）
 
