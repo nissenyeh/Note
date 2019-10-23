@@ -3,11 +3,11 @@
 
 ## datatype 
 
-INT：整數（可以存負數）
-VARCHAR：可以存文字，不管中英文。1個字，就是1個VARCHAR（雖然實際上英文用1個byte，中文用2個byte存）
-BLOB：可以上傳檔案
-DECIMAL：小數，DECIMAL(3,1)表示共有三位數，到小數點後一位，如23.1
-DATATIME：時間
+- INT：整數（可以存負數）
+- VARCHAR：可以存文字，不管中英文。1個字，就是1個VARCHAR（雖然實際上英文用1個byte，中文用2個byte存）
+- BLOB：可以上傳檔案
+- DECIMAL：小數，DECIMAL(3,1)表示共有三位數，到小數點後一位，如23.1
+- DATATIME：時間
 
 ## 設定
 
