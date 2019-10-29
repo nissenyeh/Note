@@ -51,3 +51,13 @@ host google.com //做名稱解析
 control+l  // 把shell指令清掉
 command+shift+t //重開關掉視窗 (for瀏覽器)
 ```
+
+#### 如何自訂腳本
+
+1. 在 ~ 目錄下，建立或開啟  `~/.custom_aliases`，並且設定alias
+
+```
+alias gitlazy="git add . && git commit -m 'update' && git push -u origin master"
+```
+
+2. 完成後 source  `~/.custom_aliases` 確保腳本可以用
