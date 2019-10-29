@@ -18,3 +18,157 @@
 - AI：是auto incrementail 自動增加，通常只有int才能用。隨著列的變多它會自動 0->1->2
 - UN：是 Unsigned data type 沒有符號的資料，比如說你存-3，他就會幫你變成3
 - BIN Is binary column 存放二進制數列
+
+### 「表格」的增刪改查的指令
+
+- 新增：CREATE TABLE tablename...
+- 刪除：DROP TABLE tablename...
+- 修改：ALTER TABLE tablename...
+- 查詢：SHOW TABLE tablename...
+
+```
+CREATE TABLE talbe_name (欄位1 格式, 欄位2 格式)
+```
+
+### 「資料」的增刪改查的指令
+
+- 新增: INSER INTO tablename ... VALUES ...
+- 刪除: DELETE FROM tablename ... where ....
+- 修改: UPDATE tablename SET ... where ...
+- 查詢: SELECT * or 欄位 from tablename where
+
+1. INSERT INTO ... VALUES  資料插入
+
+```
+INSERT INTO table_name
+(column1, column2 , column3)
+VALUES
+(data1, data2, data3) // 如果不照順序，就可以指定欄位來排
+
+or 
+
+INSERT INTO table_name
+VALUES (.....)  // 如果沒指定欄位，就會照順序排
+```
+
+例子
+
+```
+INSERT INTO CUSTOMER
+VALUES (001,JACKSON,MALE)
+
+INSERT INTO CUSTOMER
+(INDEX, NAME, GENDER)
+VALUES
+(001,JACKSON,MALE)
+
+INSERT INTO CUSTOMER
+SELECT * FROM OTHERCUSTOMER
+WHERE NAME = 'JACK'
+```
+
+
+2. DELETE FROM .... WHERE 刪除資料
+
+```
+DELETE FROM table_name 
+WHERE  COLUMN = ''  // 一定要指定條件
+
+DELETE FROM table_name //  這個指令會把所有row都刪掉，只剩下表格，要小心使用！！
+```
+
+```
+DELETE FROM CUSTOMER
+WHERE  NAME = 'JACKSON'
+```
+
+3. UPDATE .... SET  修改資料
+
+```
+UPDARE table_name
+SET col = ''
+WHERE col = ''
+
+```
+```
+UPDARE customer
+SET age = 12
+WHERE name = 'jackson'
+```
+
+4. SELECT ... FROM 查詢資料
+
+```
+SELECT * 
+FROM tablename
+WHERE ...  
+```
+
+```
+SELECT description, price
+FROM product 
+WHERE price > 300
+```
+
+## 運算子是有優先順序的
+
+在where 中，可以使用運算子，但是要小心他們有順序，因此如果需要的話務必加上括號。
+
+NOT > AND > OR 
+
+```
+DELETE FROM CUSTOMER
+WHERE NAME = 'JACKSON' & AGE > 30 or AGE <20  
+會被翻譯成名字叫JACKSON，年齡大於30歲的客戶，或是年齡大於20的客戶
+
+WHERE NAME = 'JACKSON' & (AGE > 30 or AGE <20)
+這樣才是名字叫JACKSON且年齡大於30或是小餘20歲的客戶
+
+```
+
+## 別名得使用
+
+`as`：可以設定別名
+
+```
+SELECT p.name p.price
+FROM product as p 
+WHERE p.price > 300
+```
+
+## Like的使用
+
+Like可以去進行模糊比對
+
+- % ：匹配0~n個可能性 Mic* matches Mickey, Michael, Michelle, etc.
+- ? ：匹配有一個字元 s?n matches sun, son, san, sin, etc.
+
+```
+select * from table
+where name like '%lism'
+order by id
+```
+
+## 函數的使用
+
+- COUNT(), MAX(), MIN(), SUM(), AVG()…等
+
+
+```
+select COUNT(*) from table
+where year like '%2015' // 找出 2015 年的資料有幾筆
+```
+- YEAR(), MONTH()
+
+```
+select * from Registration
+where year(registrationDate) > 2008  // 搜尋2008年後的資料
+```
+
+### 小練習
+
+- 如何在student的表格中加上CLASS
+
+alter table db.student 
+add column Class VARCHAR()
+

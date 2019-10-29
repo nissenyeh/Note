@@ -71,6 +71,11 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
 
 
+### Linux作業系統課程（筆記）
+- [作業系統](作業系統/linux作業系統課程.md)
+
+
+
 ### 台大計算資料庫管理（筆記）
 
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
