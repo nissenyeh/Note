@@ -71,8 +71,8 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
 
 
-### Linux作業系統課程（筆記）
-- [作業系統](作業系統/linux作業系統課程.md)
+### 臺大Linux系統訓練班
+- [作業系統](作業系統/linux作業系統課程.md):如何寫shell script？如何檢查網路連線？
 
 
 
