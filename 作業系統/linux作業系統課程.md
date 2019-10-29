@@ -54,10 +54,10 @@ command+shift+t //重開關掉視窗 (for瀏覽器)
 
 #### 如何自訂腳本
 
-1. 在 ~ 目錄下，建立或開啟  `~/.custom_aliases`，並且設定alias
+1. 如果是使用zshrc，就在 ~ 目錄下，找到  `~/.zshrc`，並且設定alias
 
 ```
 alias gitlazy="git add . && git commit -m 'update' && git push -u origin master"
 ```
 
-2. 完成後 source  `~/.custom_aliases` 確保腳本可以用
+2. 完成後重新開啟終端機，下次他就會自動source 該 script，並設定alias>
