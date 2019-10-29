@@ -60,4 +60,4 @@ command+shift+t //重開關掉視窗 (for瀏覽器)
 alias gitlazy="git add . && git commit -m 'update' && git push -u origin master"
 ```
 
-2. 完成後重新開啟終端機，下次他就會自動source 該 script，並設定alias>
+2. 完成後重新開啟終端機，下次他就會自動source 該 script，並設定alias。
