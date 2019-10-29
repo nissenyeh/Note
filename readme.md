@@ -72,7 +72,10 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 
 ### 臺大Linux系統訓練班
-- [作業系統](作業系統/linux作業系統課程.md):如何寫shell script？如何檢查網路連線？
+
+- [基本介紹](作業系統/linux基本介紹.md)
+- [實用指令](作業系統/linux實用指令.md):如何寫shell script？如何檢查網路連線？
+
 
 
 
@@ -91,7 +94,6 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [Python Numpy](Python/numpy.md)
 - [Python Panda](Python/panda.md)
 - [Python matplotlib](Python/matplotlib.md)
-
 
 
 ### Diary
