@@ -67,6 +67,8 @@ My notes about software development
 Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [域名系統(DNS)](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
 
+> 11.27期中考，考試考到章節3.3
+
 
 ### operating system 清大作業系統開放式課程（筆記）
 - [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
