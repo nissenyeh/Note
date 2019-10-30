@@ -110,6 +110,24 @@ FROM product
 WHERE price > 300
 ```
 
+## 表格合併 Left join
+
+```
+SELECT  ...
+FROM ...
+Left join ... // join方式
+on ... //告訴怎麼join 
+```
+
+```
+// 查詢學期2019年有什麼課程
+select course.name
+from db.semester
+left join db.course
+on semester.id = course.id
+where semester.year = 2019
+```
+
 ## 運算子是有優先順序的
 
 在where 中，可以使用運算子，但是要小心他們有順序，因此如果需要的話務必加上括號。
