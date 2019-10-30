@@ -185,6 +185,17 @@ where year(registrationDate) > 2008  // 搜尋2008年後的資料
 
 - DISTINCT() 顯示不重複的資料
 
+## order by 
+
+- ASC：升冪排列
+- DESC：降冪排列
+
+```
+根據名字筆畫升冪排列
+select * from STUDENT
+order by name ASC 
+```
+
 ### 小練習
 
 - 如何在student的表格中加上CLASS
