@@ -120,12 +120,12 @@ on ... //告訴怎麼join
 ```
 
 ```
-// 查詢學期2019年有什麼課程
-select course.name
-from db.semester
-left join db.course
-on semester.id = course.id
-where semester.year = 2019
+// 查詢學期2019年有什麼課程，並且唯一查詢
+select distinct(COURSE.CourseName)
+from COURSE 
+left join SEMESTER
+on COURSE.CourseID = SEMESTER.SemesterID
+where SEMESTER.year =2019
 ```
 
 ## 運算子是有優先順序的
@@ -182,6 +182,8 @@ where year like '%2015' // 找出 2015 年的資料有幾筆
 select * from Registration
 where year(registrationDate) > 2008  // 搜尋2008年後的資料
 ```
+
+- DISTINCT() 顯示不重複的資料
 
 ### 小練習
 
