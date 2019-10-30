@@ -66,10 +66,11 @@ My notes about software development
 - [程式架構(Application Architecture)與常見的關係](計算機網路/P2P&CS.md):
 Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [域名系統(DNS)](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
-- [同步與阻塞(Synchronous與Blocking)](計算機網路/同步與阻塞.md): 什麼是 Process 的 Synchronous v.s. Asynchronous 以及 Kernel 的 Blocking v.s. non-blocking
+
 
 ### operating system 清大作業系統開放式課程（筆記）
 - [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
+- [同步與阻塞(Synchronous與Blocking)](作業系統/同步與阻塞.md): 什麼是 Process 的 Synchronous v.s. Asynchronous 以及 Kernel 的 Blocking v.s. non-blocking
 
 
 ### 臺大Linux系統訓練班
