@@ -203,3 +203,15 @@ order by name ASC
 alter table db.student 
 add column Class VARCHAR()
 
+
+### Relational algebra 關聯式
+
+為什麼join和where的寫法都可以？
+
+selecyt 垂直篩選
+where 水平篩選
+
+Cartesian Product 乘積運算：直接把兩個表格承在一起
+Join 乘開後再用根據條件來去過濾
+
+join很多次都還是表格，因為Relational algebra 有封閉性。
