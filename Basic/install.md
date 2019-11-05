@@ -2,17 +2,16 @@
 
 換新電腦的時候需要安裝的軟體
 
-### 設計用
-- adobe XD 2019
-- adobe photoshop 2015
-- adobe AI 2015
-- eagle：收集圖片
 
 ### 溝通用
 
-- slack：溝通用
-- line：溝通用
+- [Slack](https://slack.com/intl/en-tw/)：團隊溝通用
+- [line](https://line.me/zh-hant/)：私下溝通用
+- [Wechat]：私下溝通用
 
+### 娛樂用
+
+- [Spotify](https://www.spotify.com/tw/)：音樂與Podcast軟體
 
 ###  文書處理
 - 馬克飛象
@@ -35,9 +34,10 @@ AirServer：用來和手機同步
 ### 開發用
 - [VScode](https://code.visualstudio.com): 程式開發環境
 - [Giphy capture](https://giphy.com/apps/giphycapture): 用來錄製GIF說明圖
-- [shell](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f): 好看的command lune 介面
+- [brew](https://brew.sh/index_zh-tw): 使用 Homebrew 可以安裝 Apple 沒有預裝但是你需要的東西。
+- [iterms](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f): 好看的command line介面（要先裝brew）
 - [git](https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9D-Git):版本管理系統
-- [brew](https://brew.sh/index_zh-tw): 用來安裝
+
 - [node](https://nodejs.org/zh-tw/download/)
 - [yarn](https://yarnpkg.com/zh-Hant/docs/install#mac-stable)
 - [Jupyter](https://jupyter.org/install):python數據分析用
@@ -66,3 +66,11 @@ AirServer：用來和手機同步
 
 - Material Icon Theme : 好看的icon
 - Monokai Pro：好看的介面
+
+
+### ▌設計用
+- adobe XD 2019
+- adobe photoshop 2015
+- adobe AI 2015
+- eagle：收集圖片
+
