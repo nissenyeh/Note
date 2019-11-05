@@ -8,10 +8,9 @@
 
 - [Slack](https://slack.com/intl/en-tw/)：團隊溝通用
 - [line](https://line.me/zh-hant/)：私下溝通用
-- [Wechat]：私下溝通用
+- [Wechat](https://wx.qq.com/wechat?lang=zh_TW)：私下溝通用
 
 ### 自訂腳本
-
 
 1. 如果是使用zshrc作為shell的環境，就可以去 ~ 目錄下，找到 `~/.zshrc`，並且設定alias
 
@@ -37,7 +36,7 @@ alias gitnote="git add . && git commit -m 'update' && git push -u origin master"
 - [Workbench](https://www.mysql.com/products/workbench/)：連接mySQL的介面
 > [更多安裝教學](http://homepage.ntu.edu.tw/~wyang/db2019/slides/db2019_hw2.pdf)
 - [GitKaren](https://www.gitkraken.com/)：Git的圖型介面
-- [VirtualBox]()：模擬用的軟體
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)：模擬用的軟體
 
 
 ### 小軟體
@@ -59,7 +58,7 @@ AirServer：用來和手機同步
 
 ### ▌VS套件
 
-command+shift+p 選擇 install 'code' command in PATH
+- code：command+shift+p 選擇 install 'code' command in PATH
 
 #### 高度推薦
 
@@ -85,6 +84,7 @@ command+shift+p 選擇 install 'code' command in PATH
 
 
 ### ▌設計用
+
 - adobe XD 2019
 - adobe photoshop 2015
 - adobe AI 2015
