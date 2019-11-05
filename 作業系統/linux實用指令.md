@@ -10,7 +10,7 @@ exit #離開
 ls -a # 可以看帶點的檔案
 ls -l # use a long listing format以長格式表示，包含檔案屬性。
 sudo apt-get update # 更新
-sudo apt-get update sl # 更新「sl」套件
+sudo apt-get install sl # 安裝「sl」套件
 sudo apt-get remove sl # 刪除「sl」套件
 ping 8.8.8.8 # 連到ip
 host google.com #去找DNS做名稱解析
