@@ -10,6 +10,16 @@
 - [line](https://line.me/zh-hant/)：私下溝通用
 - [Wechat]：私下溝通用
 
+### 自訂腳本
+
+
+1. 如果是使用zshrc作為shell的環境，就可以去 ~ 目錄下，找到 `~/.zshrc`，並且設定alias
+
+```shell
+alias gitnote="git add . && git commit -m 'update' && git push -u origin master"
+```
+2. 完成後重新開啟終端機，下次他就會自動source 該 script，並設定alias。
+
 ### 娛樂用
 
 - [Spotify](https://www.spotify.com/tw/)：音樂與Podcast軟體

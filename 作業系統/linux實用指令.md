@@ -37,7 +37,7 @@ command+shift+t #重開關掉視窗 (for瀏覽器)
 1. 如果是使用zshrc作為shell的環境，就可以去 ~ 目錄下，找到 `~/.zshrc`，並且設定alias
 
 ```shell
-alias gitlazy="git add . && git commit -m 'update' && git push -u origin master"
+alias gitnote="git add . && git commit -m 'update' && git push -u origin master"
 ```
 
 2. 完成後重新開啟終端機，下次他就會自動source 該 script，並設定alias。
