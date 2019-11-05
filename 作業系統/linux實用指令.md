@@ -8,6 +8,7 @@
 ```shell
 sudo -s #切換到superuser do，之後sudo指令就不用再輸入密碼
 exit #離開
+
 ```
 
 資訊顯示
@@ -17,6 +18,8 @@ whoami # 查詢使用者是誰？
 uname -a # 看到kernel的狀態
 ifcongfig # 看網卡資訊
 top # 列出系統上最吃CPU 與記憶體的程式。
+history # 看過去有過的指令 用驚嘆號執行，!20
+（或是用control + R 搜索）
 ```
 
 在top中，其中load average（平均附載）:0.00（最近 1 分鐘） , 0.01（最近 5 分鐘） , 0.05（最近 15 分鐘）
@@ -96,7 +99,13 @@ chsh # change shell 更換殼成式
 
 ## 環境變數
 
-- 可以自己設定變數
+### 公有設定檔
+
+/etc/bashrc
+
+### 私有設定檔
+
+~/.bashrc
 
 ## for 迴圈
 
