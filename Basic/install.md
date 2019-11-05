@@ -2,6 +2,7 @@
 
 換新電腦的時候需要安裝的軟體
 
+- [google瀏覽器](https://www.google.com/intl/zh-TW/chrome/)：瀏覽器
 
 ### 溝通用
 
@@ -14,16 +15,19 @@
 - [Spotify](https://www.spotify.com/tw/)：音樂與Podcast軟體
 
 ###  文書處理
-- 馬克飛象
-- Evernote
-- Microsoft 系列（from學校）
+
+- [馬克飛象](https://maxiang.io/)：markdown筆記軟體
+- [Evernote](https://evernote.com/intl/zh-tw)：筆記軟體
+- [Microsoft](http://download.cc.ntu.edu.tw/)：系列from學校
 
 ### 軟體
 
-- Postman
-- MySQLWorkbench
-- WeChat
+- [Postman](https://www.getpostman.com/)：模擬API的軟體
+- [MySQL](https://dev.mysql.com/downloads/mysql/)：安裝mySQL
+- [Workbench](https://www.mysql.com/products/workbench/)：連接mySQL的介面
+> [更多安裝教學](http://homepage.ntu.edu.tw/~wyang/db2019/slides/db2019_hw2.pdf)
 - [GitKaren](https://www.gitkraken.com/)：Git的圖型介面
+- [VirtualBox]()：模擬用的軟體
 
 
 ### 小軟體
@@ -33,17 +37,19 @@ AirServer：用來和手機同步
 
 ### 開發用
 - [VScode](https://code.visualstudio.com): 程式開發環境
-- [Giphy capture](https://giphy.com/apps/giphycapture): 用來錄製GIF說明圖
 - [brew](https://brew.sh/index_zh-tw): 使用 Homebrew 可以安裝 Apple 沒有預裝但是你需要的東西。
 - [iterms](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f): 好看的command line介面（要先裝brew）
 - [git](https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9D-Git):版本管理系統
-
 - [node](https://nodejs.org/zh-tw/download/)
-- [yarn](https://yarnpkg.com/zh-Hant/docs/install#mac-stable)
+- [yarn](https://yarnpkg.com/zh-Hant/docs/install#mac-stable)：有這個就不用裝node
+
+
 - [Jupyter](https://jupyter.org/install):python數據分析用
+- [Giphy capture](https://giphy.com/apps/giphycapture): 用來錄製GIF說明圖
 
 ### ▌VS套件
 
+command+shift+p 選擇 install 'code' command in PATH
 
 #### 高度推薦
 
