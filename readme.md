@@ -79,7 +79,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 ### 臺大Linux系統訓練班
 
 - [基本介紹](作業系統/linux基本介紹.md)
-- [實用指令](作業系統/linux實用指令.md):如何寫shell script？如何檢查網路連線？
+- [實用指令](作業系統/linux實用指令.md)：如何列出所有檔案？如何寫shell script？如何檢查網路連線？
 - [shellscript](作業系統/shellscript.md)
 
 

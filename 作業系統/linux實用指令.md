@@ -10,13 +10,19 @@ exit #離開
 sudo apt-get update # 更新
 sudo apt-get install sl # 安裝「sl」套件
 sudo apt-get remove sl # 刪除「sl」套件
+man ls # manual 查詢可使用參數
 ```
 
 路徑相關
 ```shell
+~ # 代表了家目錄，可以不用 cd ../../ 
 ls -a # 可以看帶點的檔案
 ls -l # use a long listing format以長格式表示，包含檔案屬性。
-pwd # print working directory
+pwd # print working directory]
+cd # change directory 
+cp # copy
+mkdir # make directory
+
 whoami # 查詢使用者是誰？
 ```
 
