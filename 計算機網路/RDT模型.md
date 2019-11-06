@@ -64,26 +64,26 @@ sender會送package0到receiver
 random lost：隨機遺失，不知道為什麼就消失
 congestion lost：堵塞遺失，網路塞爆，送100次都送不到
 
-## Pipelining Protocols
+## Pipelining Protocols 是什麼？
 
 實際的情況下並不是
+sender送出package -> sender等待receiver的ACK ->sender再送出下一個package
+因為這樣中間會有很多等待時間
 
-- sender送出package
-- sender等待ACK
-- sender在送出package
+實際的情況下比較像是
+sender連續送出一堆package -> receiver如果確認收到package就連續送出一堆ACK ->sender連續收到一堆ACK
 
-這樣中間會有很多等待時間
+那這就稱為`Pipelining Protocols`
 
-實際的情況下比較像是，那這就稱為`Pipelining Protocols`
-
-- sender連續送出一堆package
-- sender連續收到一堆ACK
-
-
+### Pipelining Protocols 的類型
 
 1. Selective Repeat：
 
+假設sender送出1~10的package，而receiver只缺少9，那他就發一個NAK去sender讓他把9送過來。那這樣的好處就是，他可以只去拿需要的資料，而不需要一次讓sender送很多。但缺點就是，他必須有buffer去把1~8和10放好，然後管理當中的順序問題。
+
 2. Go-back-N：
+
+假設sender送出1~10的package，而receiver只缺少9，那他就發一個NAK(9)去sender讓他把9~9+N送過來。那這樣的好處就是，可以照順序去收，不需要buffer去把1~8和10放好，但壞處可能就是sender需要常常送重複的內容。
 
 - sender：sender一次送出0~N個package到receiver那邊，receiver收到後就會告訴sender所謂的cumulative ACK。假設是5好了，那就表示receiver收到了1~5的package對方都收到了。那sender就會送6~6+N個package。那假設0的timer過期了，那sender就會重新送0~N個package。
 - receiver：當receiver收過0了，他會預期他要收到1的package，如果沒有（像是收到5)，那他就會把5丟掉，然後一直回0的ACK到sender那邊，讓sender把1~1+N送過來。
