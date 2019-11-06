@@ -67,8 +67,10 @@ My notes about software development
 - [程式架構(Application Architecture)與常見的關係](計算機網路/P2P&CS.md):
 Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [域名系統(DNS)](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
+- [可靠資料傳輸(RDT)](計算機網路/RDT模型.md): rdt1.0～3.0的 State Machine？以及 Pipelining Protocols是什麼？
 
-> 11.27期中考，考試考到章節3.3
+> 11.27期中考，考試考到章節3.3，
+- 考試會設計state machine去設計ACK/NAK的內容
 
 
 ### operating system 清大作業系統開放式課程（筆記）
