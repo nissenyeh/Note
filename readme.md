@@ -21,33 +21,6 @@ My notes about software development
 
 
 
-## Fronted End 
-
-- [token ,localStorage and sessionStorage](Fronted/token.md)
-- [命名問題收集（更新）](Fronted/Naming.md)
-
-### Vue 
-
-- [Props and emit](Vue/prop.md)
-- [RWD with Vue](Vue/Rwd.md)
-
-
-### Charts
-- [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
-- [ChartJS](Fronted/ChartJS.md)
-
-
-
-## Back End 
-
-- [Database Basic](Backend/Basic_Database.md)
-
-### Django 
-
-- [Django Setting and Base Connection](Backend/Django_setting.md)
-- [Model, Serialization and View](Backend/Django_basic.md) 
-
-
 ## Programming Foundation
 
 - [Linux: Command line](Basic/commandline.md)
@@ -89,6 +62,33 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 ### Operating system : 清大作業系統開放式課程（筆記）
 - [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
 - [同步與阻塞(Synchronous與Blocking)](作業系統/同步與阻塞.md): 什麼是 Process 的 Synchronous v.s. Asynchronous 以及 Kernel 的 Blocking v.s. non-blocking
+
+
+## Fronted End 
+
+- [token ,localStorage and sessionStorage](Fronted/token.md)
+- [命名問題收集（更新）](Fronted/Naming.md)
+
+### Vue 
+
+- [Props and emit](Vue/prop.md)
+- [RWD with Vue](Vue/Rwd.md)
+
+
+### Charts
+- [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
+- [ChartJS](Fronted/ChartJS.md)
+
+
+
+## Back End 
+
+- [Database Basic](Backend/Basic_Database.md)
+
+### Django 
+
+- [Django Setting and Base Connection](Backend/Django_setting.md)
+- [Model, Serialization and View](Backend/Django_basic.md) 
 
 
 ## Python
