@@ -91,6 +91,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
 - [實用SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
+- [實用SQL練習](資料庫管理/mysqlQA.md)：一些練習題目
 
 ## Python
 
