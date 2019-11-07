@@ -51,6 +51,20 @@ on COURSE.CourseID = SEMESTER.SemesterID
 where SEMESTER.year =2019
 ```
 
+###  表格table的「合併計算」Group by
+
+```sql
+SELECT id , count(*) 
+FROM 成員, 交友狀況
+GROUP BY 成員.id
+HAVING count(*)>=3
+ORDER BY count(*) DESC;
+```
+
+
+- 遇到「合併計算」的時候就想到 GROUP BY，然後分別 select 名稱欄位、可以合併計算的欄位名稱
+- 遇到「合併計算又要篩選」的時候，就想到 HAVING
+- 遇到「排序」的時候就想到 ORDER BY
 
 1. INSERT INTO ... VALUES  資料插入
 
