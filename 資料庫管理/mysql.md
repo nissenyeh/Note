@@ -21,9 +21,13 @@ CREATE TABLE talbe_name (欄位1 格式, 欄位2 格式)
 - 修改: UPDATE tablename SET ... where ...
 - 查詢: SELECT * or 欄位 from tablename where
 
+> select是垂直篩選 和 where 水平篩選
+
 ###  表格table的「合併查詢」
 
 #### 1. 使用 from 直接合併，然後用 where 篩選
+
+表格合併時，會利用乘積運算(Cartesian Product)，直接把兩個表格乘在一起，然後可以再用where去篩選
 
 ```sql
 SELECT * 
@@ -31,9 +35,12 @@ FROM 成員, 交友狀況
 WHERE 成員居住地點= '台北' AND 成員.id = 交友狀況.id`
 ```
 
-但這種做法不適用其中一邊的表格有「空直」得狀況
+但這種做法不適用其中一邊的表格有「空值」得狀況
 
 #### 2.使用 Left join 合併，然後用 on 去設定規則
+
+1. 使用 Left join 合併，然後用 on 去設定規則
+2. join 乘開後再用根據條件來去過濾
 
 ```sql
 SELECT  ...
@@ -50,6 +57,10 @@ left join SEMESTER
 on COURSE.CourseID = SEMESTER.SemesterID
 where SEMESTER.year =2019
 ```
+
+> 不管是用哪種方式，可以發現 Join很多次都還是表格，因為 Relational algebra 有封閉性
+
+
 
 ###  表格table的「合併計算」Group by
 
@@ -215,18 +226,6 @@ order by name ASC
 alter table db.student 
 add column Class VARCHAR()
 
-
-### Relational algebra 關聯式
-
-為什麼join和where的寫法都可以？
-
-selecyt 垂直篩選
-where 水平篩選
-
-Cartesian Product 乘積運算：直接把兩個表格承在一起
-Join 乘開後再用根據條件來去過濾
-
-join很多次都還是表格，因為Relational algebra 有封閉性。
 
 
 ## datatype 
