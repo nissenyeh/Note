@@ -4,10 +4,13 @@
 
 
 ## 小明與他的朋友們
-- 表格名稱：member
+
+### 表格名稱：member
+
 ![RelationShip](./圖片/Q1.png)
 
-- 表格名稱：member_friendship
+### 表格名稱：member_friendship
+
 ![RelationShip](./圖片/Q2.png)
 
 
