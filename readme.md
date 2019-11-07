@@ -59,7 +59,7 @@ My notes about software development
 
 
 
-### Computer network 台大計算機網路課程（筆記）
+### Computer network: 台大計算機網路課程（筆記）
 
 - [基本名詞介紹](計算機網路/基本網路概論.md)：ISP、Router、Host、Packet 09/18
 - [封包傳遞的方式](計算機網路/網路傳輸.md)：Circuit switching, Packet switching 09/25
@@ -72,26 +72,24 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 > 11.27期中考，考試考到章節3.3，
 - 考試會設計state machine去設計ACK/NAK的內容
 
-
-### operating system 清大作業系統開放式課程（筆記）
-- [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
-- [同步與阻塞(Synchronous與Blocking)](作業系統/同步與阻塞.md): 什麼是 Process 的 Synchronous v.s. Asynchronous 以及 Kernel 的 Blocking v.s. non-blocking
-
-
-### 臺大Linux系統訓練班
+### Linux : 臺大Linux系統訓練班（筆記）
 
 - [基本介紹](作業系統/linux基本介紹.md)
 - [實用指令](作業系統/linux實用指令.md)：如何列出所有檔案？如何寫shell script？如何檢查網路連線？
 - [shellscript](作業系統/shellscript.md)
 
 
-
-
-### 台大計算資料庫管理（筆記）
+### Database & MySQL : 台大計算資料庫管理（筆記）
 
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
 - [實用SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
 - [實用SQL練習](資料庫管理/mysqlQA.md)：一些練習題目
+
+
+### Operating system : 清大作業系統開放式課程（筆記）
+- [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
+- [同步與阻塞(Synchronous與Blocking)](作業系統/同步與阻塞.md): 什麼是 Process 的 Synchronous v.s. Asynchronous 以及 Kernel 的 Blocking v.s. non-blocking
+
 
 ## Python
 
