@@ -42,15 +42,20 @@ ER model主要分為三個部分：
 
 ## 實體（Entity）
 
-實體又分為Entity Type（例如學生）和 Entity instance（例如小明、小華）
+一個 Entity Type就是一個表格，裡面可能包含許多的Attribute，例如學生 ID、姓名、年齡...等，有多個欄位的就是一個 Entity（實體），如果沒有更多衍生的欄位就只是Attribute（屬性）。
 
-一個 Entity Type就是一個表格，裡面可能包含許多的Attribute，例如學生 ID、姓名、年齡...等。
+Entiy Type可以簡單分為
 
-1. 如何區別 Entity（實體）和Attribute ? 有多個欄位的就是一個 Entity（實體）
+1. Strong Entiy
+2. Weak Entity（依賴於Strong Entiy，不能單獨存在，例如：員工與其扶養親屬）
+3. Associative Entiy
 
-如果沒有更多衍生的欄位就只是Attribute。
 
-2. 注意運算結果不要存成實體（除非是想加速運算）
+
+
+### 運算結果不要存成實體
+
+注意運算結果不要存成實體（除非是想加速運算）
 
 運算結果像是從費用和產品計算出費用報告
 

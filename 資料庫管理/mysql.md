@@ -21,7 +21,7 @@ CREATE TABLE talbe_name (欄位1 格式, 欄位2 格式)
 - 修改: UPDATE tablename SET ... where ...
 - 查詢: SELECT * or 欄位 from tablename where
 
-> select是垂直篩選 和 where 水平篩選
+> select是垂直篩選 ＆ where 是水平篩選
 
 ###  表格table的「合併查詢」
 
