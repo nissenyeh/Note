@@ -240,3 +240,13 @@ Post.objects.get(name='小明') #可以把欄位name=小明的「唯一筆」資
     {% endfor %}
 {% endblock %}
 ```
+
+## 設定靜態資料夾 static
+
+- 在根目錄下manage.py那一層新增一個`static`資料夾，用來把圖片放進去
+
+
+```py
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  #告訴它static在哪裡
+```
