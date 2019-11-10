@@ -46,6 +46,8 @@ AirServer：用來和手機同步
 
 ### 開發用
 - [VScode](https://code.visualstudio.com): 程式開發環境
+- [Python3](https://www.python.org/downloads/release/python-368/):python3
+- Django: `pip3 install Django`
 - [brew](https://brew.sh/index_zh-tw): 使用 Homebrew 可以安裝 Apple 沒有預裝但是你需要的東西。
 - [iterms](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f): 好看的command line介面（要先裝brew）
 - [git](https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9D-Git):版本管理系統

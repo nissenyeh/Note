@@ -50,6 +50,11 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [基本介紹](作業系統/linux基本介紹.md)
 - [實用指令](作業系統/linux實用指令.md)：如何列出所有檔案？如何寫shell script？如何檢查網路連線？
 - [shellscript](作業系統/shellscript.md)
+- [Vm](作業系統/linux其他.md):vm 
+
+### Python Django 網站設計: 臺大資訊訓練班（筆記）
+
+- [基本介紹](Backend/DjancoClass.md)
 
 
 ### Database & MySQL : 台大計算資料庫管理（筆記）

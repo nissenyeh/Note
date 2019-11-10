@@ -37,7 +37,10 @@ find ./ -name 'hi' # 從 ./開使找名為hi的檔案
 ```shell
 ls | wc -l #秀出ls的資料，但丟到wc去看有幾行
 tail -f 'server.log' | grep 'error' -C  #去看末尾的資料，但是只顯示有error的部分
+cat fileName | sort | unique | wc -l #去把檔案內容排序、找出唯一值、去看有幾行（這個在看server ip是很方便，可以看到有多少不重複的IP）
 ```
+
+
 
 暱稱
 ```shell
@@ -167,3 +170,24 @@ alias gitnote="git add . && git commit -m 'update' && git push -u origin master"
 
 2. 完成後重新開啟終端機，下次他就會自動source 該 script，並設定alias。
 
+
+
+# 練習題目
+
+```
+3
+1
+4
+4
+2
+3
+5
+6
+7
+3
+4
+5
+6
+```
+
+- 請找出有幾個不重複的數字？
