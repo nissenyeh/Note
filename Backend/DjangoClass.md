@@ -198,3 +198,45 @@ Post.objects.get(name='小明') #可以把欄位name=小明的「唯一筆」資
     </body>
 </html>
 ```
+
+## 模板的 include ＆ extend
+
+- 不同的template之間可以使用include來「引用」，用extend 「繼承」
+
+
+```html
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='utf-8'>
+    <title>
+        {% block title %} {% endblock %}
+    </title>
+    </head>
+    <body>
+        {% comment %} {% include 'header.html' %} {% endcomment %}
+        {% block headmessage %} {% endblock %}  # 預期這裡要塞叫headmessage的東西進來
+        <hr>
+        {% block content %} {% endblock %}   # 預期這裡要塞叫content的東西進來
+        <hr>
+        {% include 'footer.html' %}  # 引用別的模板得所有內容
+    </body>
+</html>
+```
+
+```html
+<!-- index.html -->
+{% extends 'base.html' %}  #繼承base.html的內容
+{% block title %} 歡迎光臨我的部落格 {% endblock %}  
+{% block headmessage %} 
+<h3 style='font-family:標楷體;'>本站文章列表</h3>
+{% endblock %}
+{% block content %}  #會把資料塞到base中的{% block content %}區域
+    {% for post in posts %}
+        <p>
+            <a href='/post/{{post.slug}}'>{{ post.title }}</a>
+        </p>
+    {% endfor %}
+{% endblock %}
+```
