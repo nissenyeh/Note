@@ -54,7 +54,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 ### Python Django 網站設計: 臺大資訊訓練班（筆記）
 
-- [基本介紹](Backend/DjancoClass.md)
+- [基本介紹](Backend/DjangoClass.md)
 
 
 ### Database & MySQL : 台大計算資料庫管理（筆記）
