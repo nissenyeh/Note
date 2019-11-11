@@ -26,7 +26,7 @@ mv # move  來源 到 目的地  例如：mv ./hi.txt  ~/
    # move 也可以重新命名
 cat # 把檔案內的資料列出來 例如 cat note.txt
 rm # 刪掉資料，垃圾桶只是一個假個資料夾
-rmdir # 刪掉資料夾
+rm -r # 刪掉只個資料夾
 rmdir -r # 把整個資料夾刪掉
 mkdir # make directory
 mkdir -p a/b/c # 一次建立一連串的路徑
