@@ -219,6 +219,7 @@ select * from STUDENT
 order by name ASC 
 ```
 
+
 ### 小練習
 
 - 如何在student的表格中加上CLASS
