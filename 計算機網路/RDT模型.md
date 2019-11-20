@@ -86,3 +86,18 @@ sender連續送出一堆package -> receiver如果確認收到package就連續送
 
 - sender：sender一次送出0~N個package到receiver那邊，receiver收到後就會告訴sender所謂的cumulative ACK。假設是5好了，那就表示receiver收到了1~5的package對方都收到了。那sender就會送6~6+N個package。那假設0的timer過期了，那sender就會重新送0~N個package。
 - receiver：當receiver收過0了，他會預期他要收到1的package，如果沒有（像是收到5)，那他就會把5丟掉，然後一直回0的ACK到sender那邊，讓sender把1~1+N送過來。
+
+
+### TCP
+
+#### cumulative ACK 和 duplicate ACK
+
+在TCP的運輸中，會使用cumulative ACK 和 duplicate ACK 來管理訊息傳遞。
+
+- cumulative ACK：當receiver收到1時，他會回ACK1，當他收到2時，會回ACk2（表示1~2都收到了），當收到ACK3（表示1~3都收到了）
+- duplicate ACK：當receiver看到有gap的時候，就會送duplicate ACK給sender。我猜是收到1,2,5，receiver看到沒有3,4有一個gap，就會送duplicate ACK。sender收到duplicate ACK就知道receiver收到後面的內容，但前有一個segment他沒收到。這時候sender就趕快補送。
+
+例子：
+
+假設 sender 連續送 1,2,3,4,5 給 receiver。當receiver收到1時，他就會回ACK1，表示收到1了。當收reveiver收到2時，就回ACK2，表示收到1~2了。沒想到封包3在路上掉了，來的是4，這時候reveiver知道這個4是out of order的封包，於是receiver就會把它放在buffer，然後再送ACK2一次，表示我只收到了1~2。這時候封包5又來了，receiver又把它放在buffer中，然後又再送了ACK2。這時候sender發現了自己收到3個ACK2，sender就知道是因為receiver沒有收到3，所以才一直回它ACK2，這時候它就會補送3給receiver。而當receiver收到後，因為它1~5都到齊了，它就會直接送ACK5給sender，表示他這邊已經有1~5封包了。
+
