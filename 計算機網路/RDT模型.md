@@ -78,14 +78,14 @@ sender連續送出一堆package -> receiver如果確認收到package就連續送
 
 1. Selective Repeat：
 
-假設sender送出1~10的package，而receiver只缺少9，那他就發一個NAK去sender讓他把9送過來。那這樣的好處就是，他可以只去拿需要的資料，而不需要一次讓sender送很多。但缺點就是，他必須有buffer去把1~8和10放好，然後管理當中的順序問題。（TCP應該是利用cumulative ACK走這個方式）
+- 假設sender送出1~10的package，而receiver只缺少9，那他就發一個NAK去sender讓他把9送過來。那這樣的好處就是，他可以只去拿需要的資料，而不需要一次讓sender送很多。但缺點就是，他必須有buffer去把1~8和10放好，然後管理當中的順序問題。（TCP應該是利用cumulative ACK走這個方式）
 
 2. Go-back-N：
 
-假設sender送出1~10的package，而receiver只缺少9，那他就發一個NAK(9)去sender讓他把9~9+N送過來。那這樣的好處就是，可以照順序去收，不需要buffer去把1~8和10放好，但壞處可能就是sender需要常常送重複的內容。
+- 假設sender送出1~10的package，而receiver只缺少9，那他就發一個NAK(9)去sender讓他把9~9+N送過來。那這樣的好處就是，可以照順序去收，不需要buffer去把1~8和10放好，但壞處可能就是sender需要常常送重複的內容。
 
-- sender：sender一次送出0~N個package到receiver那邊，receiver收到後就會告訴sender所謂的cumulative ACK。假設是5好了，那就表示receiver收到了1~5的package對方都收到了。那sender就會送6~6+N個package。那假設0的timer過期了，那sender就會重新送0~N個package。
-- receiver：當receiver收過0了，他會預期他要收到1的package，如果沒有（像是收到5)，那他就會把5丟掉，然後一直回0的ACK到sender那邊，讓sender把1~1+N送過來。
+    - sender：sender一次送出0~N個package到receiver那邊，receiver收到後就會告訴sender所謂的cumulative ACK。假設是5好了，那就表示receiver收到了1~5的package對方都收到了。那sender就會送6~6+N個package。那假設0的timer過期了，那sender就會重新送0~N個package。
+    - receiver：當receiver收過0了，他會預期他要收到1的package，如果沒有（像是收到5)，那他就會把5丟掉，然後一直回0的ACK到sender那邊，讓sender把1~1+N送過來。
 
 
 # TCP
