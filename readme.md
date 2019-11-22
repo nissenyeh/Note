@@ -49,6 +49,9 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 - [基本介紹](作業系統/linux基本介紹.md)
 - [實用指令](作業系統/linux實用指令.md)：如何列出所有檔案？如何寫shell script？如何檢查網路連線？
+- [帳號管理與權限管理](作業系統/權限管理.md):chmod
+- [程序與程式](作業系統/程序與程式.md):prgrame和process
+- [套件安裝]](作業系統/套件安裝.md)
 - [shellscript](作業系統/shellscript.md)
 - [VM](作業系統/linux其他.md):vm 
 
