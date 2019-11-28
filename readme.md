@@ -65,6 +65,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
 - [實用SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
 - [資料庫機制](資料庫管理/資料庫機制.md)：資料庫架構、機制（鎖定機制，鎖定機制）
+- [資料庫倉儲](資料庫管理/資料倉儲.md)
 - [交易（Transaction）& ACID、例程（Routines）、自動觸發（Trigger）](資料庫管理/交易.md)：如何保證交易（Transaction）執行不被中斷？什麼是ACID？怎麼樣可以做自訂的SQL組合技？怎麼樣自動觸發SQL指令？
 - [實用SQL練習](資料庫管理/mysqlQA.md)：一些練習題目
 - [作業](資料庫管理/作業.md)：一些練習題目
