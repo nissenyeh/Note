@@ -4,6 +4,8 @@
 My notes about software development 
 我的軟體開發筆記（持續更新）
 
+
+
 ## JavaScript
 
 - [JavaScript Foundation](JavaScript/Basic.md)
@@ -69,7 +71,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [交易（Transaction）& ACID、例程（Routines）、自動觸發（Trigger）](資料庫管理/交易.md)：如何保證交易（Transaction）執行不被中斷？什麼是ACID？怎麼樣可以做自訂的SQL組合技？怎麼樣自動觸發SQL指令？
 - [實用SQL練習](資料庫管理/mysqlQA.md)：一些練習題目
 - [作業](資料庫管理/作業.md)：一些練習題目
-- [菜系分析](資料庫管理/作業/菜系分析.md)
+- [Greater China restaurants market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 
 
 
@@ -117,6 +119,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [Python matplotlib](Python/matplotlib.md)
 
 
-### Diary
 
-- [Diary](diary.md)
+## Side Project
+
+- [Greater China restaurants market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
