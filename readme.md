@@ -122,4 +122,4 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 ## Side Project
 
-- [Greater China catering market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
+- [Greater China catering market entry strategy（大中華地區餐飲市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
