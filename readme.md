@@ -54,7 +54,9 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [帳號管理與權限管理](作業系統/權限管理.md):chmod
 - [程序與程式](作業系統/程序與程式.md):prgrame和process
 - [套件安裝]](作業系統/套件安裝.md)
+- [Apache伺服器架設](作業系統/伺服器架設.md)
 - [網路](作業系統/網路.md)
+- [雲服務介紹](作業系統/雲服務介紹.md)
 - [shellscript](作業系統/shellscript.md)
 - [VM](作業系統/linux其他.md):vm 
 
