@@ -77,6 +77,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [作業](資料庫管理/作業.md)：一些練習題目
 - [Greater China catering market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 
+- [RDBMS資料庫淺談](資料庫管理/資料庫淺談.md)
 
 
 ### Operating system : 清大作業系統開放式課程（筆記）
