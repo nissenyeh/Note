@@ -28,7 +28,7 @@ with open(file, newline='') as csvfile:
 myDict = {}
 
 for row in data:
-    myDict.update(**dict.fromkeys(row, row[3])) #應該放置預期輸出的欄位
+    myDict.update(**dict.fromkeys(row, row[3])) #最後一個值，應該放置預期輸出的欄位，不一定是3
 
 ```
 
