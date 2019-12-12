@@ -116,12 +116,18 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 - [Python Foundation](Python/basic.md)
 - [Python Advance](Python/advance.md)
+- [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
 
 ### data analysis
 
 - [Python Numpy](Python/numpy.md)
 - [Python Panda](Python/panda.md)
 - [Python matplotlib](Python/matplotlib.md)
+
+
+## 說明
+
+- [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
 
 
 
