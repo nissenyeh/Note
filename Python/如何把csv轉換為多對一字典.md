@@ -16,7 +16,7 @@
 > 以此CSV檔案為例，最後一個欄位是預期輸出的結果
 
 
-# 完整程式碼
+# 完整腳本
 
 ```py
 import csv
@@ -28,11 +28,11 @@ with open(file, newline='') as csvfile:
 myDict = {}
 
 for row in data:
-    myDict.update(**dict.fromkeys(row, row[3]))
-# row[3]不一定是3，看希望輸出的欄位是什麼
+    myDict.update(**dict.fromkeys(row, row[3])) #應該放置預期輸出的欄位
+
 ```
 
-這樣當輸入 myDict['尼森'] 就會輸出nishan
+這樣當輸入 myDict['尼森'],myDict['阿尼森'] 都一律會輸出nishan
 
 # 說明
 
