@@ -125,9 +125,9 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [Python matplotlib](Python/matplotlib.md)
 
 
-## 說明
+## 實用技巧
 
-- [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
+- [如何把csv檔案轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
 
 
 
