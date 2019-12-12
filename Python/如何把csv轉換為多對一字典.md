@@ -16,7 +16,11 @@
 > 以此CSV檔案為例，最後一個欄位是預期輸出的結果
 
 
-# 完整腳本
+# 作法
+
+1. 準備csv檔案，檔案格式如上
+
+2. 建立python腳本，程式碼如下
 
 ```py
 import csv
@@ -30,9 +34,14 @@ myDict = {}
 for row in data:
     myDict.update(**dict.fromkeys(row, row[3])) #最後一個值，應該放置預期輸出的欄位，不一定是3
 
+
+print(myDict['尼森']) #一律會輸出nishan
+print(myDict['阿尼森']) #一律會輸出nishan
 ```
 
-這樣當輸入 myDict['尼森'],myDict['阿尼森'] 都一律會輸出nishan
+3. 執行python腳本
+
+
 
 # 說明
 
