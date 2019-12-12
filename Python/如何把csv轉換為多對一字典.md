@@ -36,7 +36,7 @@ for row in data:
 
 # 說明
 
-## 先將csv資料輸出成一個「存放多陣列」的陣列
+## 1.先將csv資料輸出成一個「存放多陣列」的陣列
 ```py
 import csv
 file = 'dic.csv'  
@@ -59,7 +59,7 @@ with open(file, newline='') as csvfile:
 - `csv.reader()` 會在讀取csv檔案後，回傳一個物件
 - `list()` 則把該物件轉成一個[[a1,a2,a3,a4],[b1,b2,b3,b4]...]的陣列檔案
 
-## 把「多陣列元素」轉換成字典
+## 2.把「多陣列元素」轉換成字典
 
 ```py
 myDict = {}
