@@ -1,7 +1,16 @@
 # 如何將CSV建立成「多對一」字典?
 
 
-目標：希望可以將csv檔案轉變成`多對一`的字典，比如說當輸入「阿尼森」、「尼森」、「nishan@nissenlab.org」時，會一率輸出nishan
+目標：將csv檔案轉變成`多對一`的字典，比如說當輸入「阿尼森」、「尼森」、「nishan@nissenlab.org」時，一率輸出nishan
+
+```
+阿尼森,尼森,nishan@nissenlab.org,nishan
+```
+
+
+# 作法
+
+1. 準備`.csv`檔案，格式如下
 
 ```csv
 阿尼森,尼森,nishan@nissenlab.org,nishan
@@ -13,12 +22,8 @@
 彭立凡,立凡,lifang@nissenlab.org,lifang
 李恩婷,恩婷,anting@nissenlab.org,anting
 ```
-> 以此CSV檔案為例，最後一個欄位是預期輸出的結果
+> 以此CSV檔案為例，最後一欄位放置「預期輸出的結果」
 
-
-# 作法
-
-1. 準備csv檔案，檔案格式如上
 
 2. 建立python腳本，程式碼如下
 
@@ -41,6 +46,9 @@ print(myDict['阿尼森']) #一律會輸出nishan
 
 3. 執行python腳本
 
+```
+python3 script.py
+```
 
 
 # 說明
