@@ -1,8 +1,7 @@
 # 如何將CSV建立成「多對一」字典?
 
-## 目標
 
-希望可以建立`多對一`的字典，比如說當輸入「阿尼森」、「尼森」時，會一率輸出nishan
+目標：希望可以將csv檔案轉變成`多對一`的字典，比如說當輸入「阿尼森」、「尼森」、「nishan@nissenlab.org」時，會一率輸出nishan
 
 ```csv
 阿尼森,尼森,nishan@nissenlab.org,nishan
@@ -14,11 +13,30 @@
 彭立凡,立凡,lifang@nissenlab.org,lifang
 李恩婷,恩婷,anting@nissenlab.org,anting
 ```
->以該CSV檔案為例，最後一個會是預期希望輸出結果
+> 以此CSV檔案為例，最後一個欄位是預期輸出的結果
 
-## 作法
 
-1. 先將csv資料輸出成一個「存放多陣列」的陣列
+# 完整程式碼
+
+```py
+import csv
+file = 'dic.csv'  #csv檔案路徑 
+
+with open(file, newline='') as csvfile:
+    data = list(csv.reader(csvfile))  
+
+myDict = {}
+
+for row in data:
+    myDict.update(**dict.fromkeys(row, row[3]))
+# row[3]不一定是3，看希望輸出的欄位是什麼
+```
+
+這樣當輸入 myDict['尼森'] 就會輸出nishan
+
+# 說明
+
+## 先將csv資料輸出成一個「存放多陣列」的陣列
 ```py
 import csv
 file = 'dic.csv'  
@@ -41,7 +59,7 @@ with open(file, newline='') as csvfile:
 - `csv.reader()` 會在讀取csv檔案後，回傳一個物件
 - `list()` 則把該物件轉成一個[[a1,a2,a3,a4],[b1,b2,b3,b4]...]的陣列檔案
 
-2. 把「多陣列元素」轉換成字典
+## 把「多陣列元素」轉換成字典
 
 ```py
 myDict = {}
@@ -59,23 +77,3 @@ prit(dic[1]) #會得到3
 
 - myDict.update(`**`dict.fromkeys(row, row[3])):會把所有的key,value拿出來，並且更新到myDict中
 
-
-## 完整程式碼
-
-
-```py
-import csv
-file = 'dic.csv'  
-
-with open(file, newline='') as csvfile:
-    data = list(csv.reader(csvfile))  
-
-myDict = {}
-
-for row in data:
-    myDict.update(**dict.fromkeys(row, row[3]))
-# row[3]不一定是3，看希望輸出的欄位是什麼
-
-# myDict 是我們想要的字典
-# myDict['尼森'] => nishan
-```
