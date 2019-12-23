@@ -128,7 +128,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 ## 實用技巧
 
 - [如何把csv檔案轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
-
+- [如何寫google sheet script？](tool/googlesheet腳本.md)
 
 
 ## Side Project
