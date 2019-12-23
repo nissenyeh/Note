@@ -1,8 +1,9 @@
 
 ## 如何寫google sheet Script
 
--  需求：當A2這個格字的值是OD時，就會顯示OD這個sheet（ER、TS相同）
+-  需求：當A2這個格字的值是OD時，就會顯示OD這個sheet（其他ER、TS的sheet就消失）
 
+![Alt text](img/1.png)
 
 
 ```js
