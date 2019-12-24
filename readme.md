@@ -20,6 +20,7 @@ My notes about software development
 - [Expression and Statement](JavaScript/expression.md)
 - [What is `this` ? ](JavaScript/this.md)
 - [Question](JavaScript/Question.md)
+- [實用的JS算法](JavaScript/實用.md)
 
 
 
