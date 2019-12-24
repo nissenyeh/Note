@@ -59,6 +59,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [雲服務介紹](作業系統/雲服務介紹.md)
 - [shellscript](作業系統/shellscript.md)
 - [VM](作業系統/linux其他.md):vm 
+- [找不到指令怎麼辦？](作業系統/找不到指令.md)：設定環境路徑 
 
 ### Python Django 網站設計: 臺大資訊訓練班（筆記）
 
