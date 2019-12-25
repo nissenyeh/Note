@@ -1,38 +1,25 @@
 
-## 如何讀取csv檔案？
+## csv檔案的讀取與寫入
 
+## 檔案的讀取
 
-
-
-## csv.reader(file) 和  file.readlines(),file.read() 的差異？
-
-假設同樣一筆資料如下
+希望可以把該筆資料根據「斷行」輸出到陣列中
 ```
-sepal_length,sepal_width,petal_length,petal_width,species
-5.1,3.5,1.4,0.2,setosa
-4.9,3,1.4,0.2,setosa
-4.7,3.2,1.3,0.2,setosa
-4.6,3.1,1.5,0.2,setosa
+Nissen,Tim
+Jean,Jane
+Kevin,Jeffery
+David,Fen
 ```
-
-- csv.reader(file)：會把csv檔案轉換成一個「二維陣列」的物件
-
-```py
-with open('exp.txt', 'r') as csvfile:
-    print(list(csv.reader(csvfile)))
-```
-
-會輸出
+希望可以輸出為：
 
 ```js
-[['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
-['5.1', '3.5', '1.4', '0.2', 'setosa']
-['4.9', '3', '1.4', '0.2', 'setosa']
-['4.7', '3.2', '1.3', '0.2', 'setosa']
-['4.6', '3.1', '1.5', '0.2', 'setosa']]
+['Nissen,Tim', 'Jean,Jane', 'Kevin,Jeffery', 'David,Fen']
 ```
 
-- file.readlines()：會把csv的每一行當成元素丟入陣列
+可以使用以下函式
+
+## file.readlines() 輸出陣列
+- `file.readlines()`：會把csv的每一行當成元素丟入陣列
 
 ```py
 exp=[]
@@ -45,8 +32,9 @@ print(exp)
 ```
 
 ```js
-['sepal_length,sepal_width,petal_length,petal_width,species', '5.1,3.5,1.4,0.2,setosa', '4.9,3,1.4,0.2,setosa', '4.7,3.2,1.3,0.2,setosa', '4.6,3.1,1.5,0.2,setosa']
+['Nissen,Tim', 'Jean,Jane', 'Kevin,Jeffery', 'David,Fen']
 ```
+## file.read() 輸出字串
 
 - file.read()：會把csv統一輸出為「一個字串」
 
@@ -57,12 +45,31 @@ with open('exp.txt', 'r') as file:
 
 會輸出一個字串（以下全部都在同一個字串中）
 ```js
-sepal_length,sepal_width,petal_length,petal_width,species
-5.1,3.5,1.4,0.2,setosa
-4.9,3,1.4,0.2,setosa
-4.7,3.2,1.3,0.2,setosa
-4.6,3.1,1.5,0.2,setosa
+Nissen,Tim
+Jean,Jane
+Kevin,Jeffery
+David,Fen
 ```
+
+
+### csv.reader(file) 輸出二維陣列
+
+- `csv.reader(file)`：會把csv檔案轉換成一個「二維陣列」的物件
+
+
+執行以下程式碼
+
+```py
+with open('exp.txt', 'r') as csvfile:
+    print(list(csv.reader(csvfile)))
+```
+
+會輸出
+
+```js
+[['Nissen', 'Tim'], ['Jean', 'Jane'], ['Kevin', 'Jeffery'], ['David', 'Fen']]
+```
+
 
 ## 如何用 csv.writer 寫入陣列
 
