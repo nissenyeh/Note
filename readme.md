@@ -122,10 +122,12 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 ### data analysis
 
+- [如何安裝Jupyter?](Python/Jupyter.md)
 - [Python Numpy](Python/numpy.md)
 - [Python Panda](Python/panda.md)
 - [Python matplotlib](Python/matplotlib.md)
-
+- [文字探勘概覽](資料分析/文字探勘.md)
+- [關鍵字萃取](資料分析/關鍵字萃取.md)
 
 ## 實用技巧
 
