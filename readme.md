@@ -118,15 +118,18 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 - [Python Foundation](Python/basic.md)
 - [Python Advance](Python/advance.md)
+- [如何使用JSON檔案？](Python/如何使用JSON檔案.md)
 - [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
+
 
 ### data analysis
 
-- [如何安裝Jupyter?](Python/Jupyter.md)
+- [如何安裝Juypter?(資料分析的好工具)](Python/Juypter.md)
 - [Python Numpy](Python/numpy.md)
 - [Python Panda](Python/panda.md)
 - [Python matplotlib](Python/matplotlib.md)
 - [文字探勘概覽](資料分析/文字探勘.md)
+- [如何利用Python和jieba進行中文斷詞?](資料分析/如何進行斷詞.md)
 - [關鍵字萃取](資料分析/關鍵字萃取.md)
 
 ## 實用技巧
