@@ -118,7 +118,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 - [Python Foundation](Python/basic.md)
 - [Python Advance](Python/advance.md)
-- [如何使用JSON檔案？](Python/如何使用JSON檔案.md)
+- [如何讀取與寫入csv檔案？](Python/如何讀取與寫入csv檔案.md)
 - [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
 
 
