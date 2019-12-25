@@ -1,5 +1,5 @@
 
-## csv檔案的讀取與寫入
+# CSV檔案的read與write
 
 ## 檔案的讀取
 
@@ -71,7 +71,15 @@ with open('exp.txt', 'r') as csvfile:
 ```
 
 
-## 如何用 csv.writer 寫入陣列
+## 檔案的寫入
+
+希望可以在csv檔案輸出為：
+
+```js
+1,2,3
+```
+
+## 使用csv.writer 寫入陣列
 
 - csv.writer(file,delimiter) 
 - writer.writerow(陣列) 
@@ -84,9 +92,10 @@ with open('exp.txt', 'w') as file:  # w 會直接覆寫, a會在文件後面加�
 ```
 
 ```py
-# 如果 delimiter 如果是' '就會輸出 1 2 3
 1,2,3
 ```
+
+> 如果 delimiter 如果是 ' ' 就會輸出 1 2 3
 
 
 ## 其他問題
