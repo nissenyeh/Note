@@ -130,7 +130,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [Python matplotlib](Python/matplotlib.md)
 - [文字探勘概覽](資料分析/文字探勘.md)
 - [如何利用Python和jieba進行中文斷詞?](資料分析/如何進行斷詞.md)
-- [關鍵字萃取](資料分析/關鍵字萃取.md)
+- [如何利用Python和jieba關鍵字萃取與關鍵字共現熱圖？](資料分析/關鍵字萃取.md)：jieba斷詞、jieba的TF-IDF關鍵字萃取、輸出共現矩陣matrix、繪製熱圖
 
 ## 實用技巧
 
