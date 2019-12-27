@@ -98,8 +98,9 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 ## Side Project
 
-- [Data analysis: Greater China catering market entry strategy（大中華地區餐飲市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 - [Data analysis: Dcard Online Shopping Board Keyword Analysis（Dcard購物版的關鍵字分析）](資料分析/Dcard購物版的關鍵字分析.md)：Analyzed 'Dcard' (Taiwan's largest anonymous communication platform) online shopping board data for keyword analysis with SQL, Python and observe consumers' evaluation of various shopping platforms
+- [Data analysis: Greater China catering market entry strategy（大中華地區餐飲市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
+
 
 ## Fronted End 
 
