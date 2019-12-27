@@ -4,8 +4,6 @@
 My notes about software development 
 我的軟體開發筆記（持續更新）
 
-
-
 ## JavaScript
 
 - [JavaScript Foundation](JavaScript/Basic.md)
@@ -23,7 +21,6 @@ My notes about software development
 - [實用的JS算法](JavaScript/實用.md)
 
 
-
 ## Programming Foundation
 
 - [Linux: Command line](Basic/commandline.md)
@@ -32,21 +29,6 @@ My notes about software development
 - [installation](Basic/install.md)
 - [Browser](Basic/browser.md)
 - [Web Secrity](Basic/webSecrity.md)
-
-
-
-### Computer network: 台大計算機網路課程（筆記）
-
-- [基本名詞介紹](計算機網路/基本網路概論.md)：ISP、Router、Host、Packet 09/18
-- [封包傳遞的方式](計算機網路/網路傳輸.md)：Circuit switching, Packet switching 09/25
-- [網路架構(Network Architecture)](計算機網路/網路分層.md): 網路架構的五個層次、介紹 Application layer(HTTP), transport layer(TCP,UDP)
-- [程式架構(Application Architecture)與常見的關係](計算機網路/P2P&CS.md):
-Client-Server 和 P2P 架構是 host 常見的兩種互動關係
-- [域名系統(DNS)](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
-- [可靠資料傳輸(RDT)](計算機網路/RDT模型.md): rdt1.0～3.0的 State Machine？以及 Pipelining Protocols是什麼？
-
-> 11.27期中考，考試考到章節3.3，
-- 考試會設計state machine去設計ACK/NAK的內容
 
 ### Linux : 臺大Linux系統訓練班（筆記）
 
@@ -62,9 +44,18 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [VM](作業系統/linux其他.md):vm 
 - [找不到指令怎麼辦？](作業系統/找不到指令.md)：設定環境路徑 
 
-### Python Django 網站設計: 臺大資訊訓練班（筆記）
 
-- [基本介紹](Backend/DjangoClass.md)
+### Computer network: 台大計算機網路課程（筆記）
+
+- [基本名詞介紹](計算機網路/基本網路概論.md)：ISP、Router、Host、Packet 09/18
+- [封包傳遞的方式](計算機網路/網路傳輸.md)：Circuit switching, Packet switching 09/25
+- [網路架構(Network Architecture)](計算機網路/網路分層.md): 網路架構的五個層次、介紹 Application layer(HTTP), transport layer(TCP,UDP)
+- [程式架構(Application Architecture)與常見的關係](計算機網路/P2P&CS.md):
+Client-Server 和 P2P 架構是 host 常見的兩種互動關係
+- [域名系統(DNS)](計算機網路/DNS.md): DNS是hostname 尋找到 IP 的方式
+- [可靠資料傳輸(RDT)](計算機網路/RDT模型.md): rdt1.0～3.0的 State Machine？以及 Pipelining Protocols是什麼？
+
+- 考試會設計state machine去設計ACK/NAK的內容
 
 
 ### Database & MySQL : 台大計算資料庫管理（筆記）
@@ -82,55 +73,23 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [RDBMS資料庫淺談](資料庫管理/資料庫淺談.md)
 
 
-### Operating system : 清大作業系統開放式課程（筆記）
-- [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
-- [同步與阻塞(Synchronous與Blocking)](作業系統/同步與阻塞.md): 什麼是 Process 的 Synchronous v.s. Asynchronous 以及 Kernel 的 Blocking v.s. non-blocking
-
-
-## Fronted End 
-
-- [token ,localStorage and sessionStorage](Fronted/token.md)
-- [命名問題收集（更新）](Fronted/Naming.md)
-
-### Vue 
-
-- [Props and emit](Vue/prop.md)
-- [RWD with Vue](Vue/Rwd.md)
-
-
-### Charts
-- [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
-- [ChartJS](Fronted/ChartJS.md)
-
-
-
-## Back End 
-
-- [Database Basic](Backend/Basic_Database.md)
-
-### Django 
-
-- [Django Setting and Base Connection](Backend/Django_setting.md)
-- [Model, Serialization and View](Backend/Django_basic.md) 
-
-
-## Python
-
-- [Python Foundation](Python/basic.md)
-- [Python Advance](Python/advance.md)
-- [如何讀取與寫入csv檔案？](Python/如何讀取與寫入csv檔案.md):readlines(),read(),csv.reader(),csv.writer()
-- [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
-
-
-### data analysis
+### data analysis：數據分析
 
 - [如何安裝Juypter?(資料分析的好工具)](Python/Juypter.md)
+- [如何利用Python和jieba進行中文斷詞?](資料分析/如何進行斷詞.md)
+- [如何利用Python和jieba關鍵字萃取與關鍵字共現熱圖？](資料分析/關鍵字萃取.md)：jieba斷詞、jieba的TF-IDF關鍵字萃取、輸出共現矩陣matrix、繪製熱圖
+- [文字探勘概覽](資料分析/文字探勘.md)
 - [Python Numpy](Python/numpy.md)
 - [Python Panda](Python/panda.md)
 - [Python matplotlib](Python/matplotlib.md)
-- [文字探勘概覽](資料分析/文字探勘.md)
-- [如何利用Python和jieba進行中文斷詞?](資料分析/如何進行斷詞.md)
-- [如何利用Python和jieba關鍵字萃取與關鍵字共現熱圖？](資料分析/關鍵字萃取.md)：jieba斷詞、jieba的TF-IDF關鍵字萃取、輸出共現矩陣matrix、繪製熱圖
+
+## Python
+
+- [如何讀取與寫入csv檔案？](Python/如何讀取與寫入csv檔案.md):readlines(),read(),csv.reader(),csv.writer()
+- [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
+- [Python Foundation](Python/basic.md)
+- [Python Advance](Python/advance.md)
+
 
 ## 實用技巧
 
@@ -143,4 +102,37 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [Data analysis: Greater China catering market entry strategy（大中華地區餐飲市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 - [Data analysis: Dcard Online Shopping Board Keyword Analysis（Dcard購物版的關鍵字分析）](資料分析/Dcard購物版的關鍵字分析.md)：Analyzed 'Dcard' (Taiwan's largest anonymous communication platform) online shopping board data for keyword analysis with SQL, Python and observe consumers' evaluation of various shopping platforms
 
+## Fronted End 
 
+- [token ,localStorage and sessionStorage](Fronted/token.md)
+- [命名問題收集（更新）](Fronted/Naming.md)
+
+
+## Back End 
+
+- [Database Basic](Backend/Basic_Database.md)
+
+### Django 
+
+- [Django Setting and Base Connection](Backend/Django_setting.md)
+- [Model, Serialization and View](Backend/Django_basic.md) 
+
+### Python Django 網站設計: 臺大資訊訓練班（筆記）
+
+- [基本介紹](Backend/DjangoClass.md)
+
+
+### Charts
+- [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
+- [ChartJS](Fronted/ChartJS.md)
+
+
+### Vue 
+
+- [Props and emit](Vue/prop.md)
+- [RWD with Vue](Vue/Rwd.md)
+
+
+### Operating system : 清大作業系統開放式課程（筆記）
+- [作業系統歷史](作業系統/作業系統歷史.md)：Batch, muti-programing and time-sharing 
+- [同步與阻塞(Synchronous與Blocking)](作業系統/同步與阻塞.md): 什麼是 Process 的 Synchronous v.s. Asynchronous 以及 Kernel 的 Blocking v.s. non-blocking
