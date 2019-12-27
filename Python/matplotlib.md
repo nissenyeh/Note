@@ -4,6 +4,12 @@
 - https://matplotlib.org/
 - [Example](https://matplotlib.org/gallery/index.html)
 
+## 安裝與使用
+
+```
+pip3 install matplotlib
+```
+
 ```
 from matplotlib import pyplot as plt
 import matplotlib
