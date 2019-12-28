@@ -77,6 +77,8 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [如何處理MySQL無法正常匯入CSV檔案的問題？](資料分析/如何處理mySQL無法import的問題.md)
 - [如何利用Python和jieba進行中文斷詞?](資料分析/如何進行斷詞.md)
 - [如何利用Python和jieba關鍵字萃取與關鍵字共現熱圖？](資料分析/關鍵字萃取.md)：jieba斷詞/關鍵字出現頻率統計/TF-IDF關鍵字萃取/關鍵字共現熱圖（輸出共現矩陣matrix、熱圖套件）
+- [如何用Python讀取與寫入csv檔案？](Python/如何讀取與寫入csv檔案.md):readlines(),read(),csv.reader(),csv.writer()
+- [如何用Python把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
 - [文字探勘概覽](資料分析/文字探勘.md)
 - [Python Numpy](Python/numpy.md)
 - [Python Panda](Python/panda.md)
@@ -84,8 +86,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 ## Python
 
-- [如何讀取與寫入csv檔案？](Python/如何讀取與寫入csv檔案.md):readlines(),read(),csv.reader(),csv.writer()
-- [如何把csv轉換為多對一字典？](Python/如何把csv轉換為多對一字典.md)
+
 - [Python Foundation](Python/basic.md)
 - [Python Advance](Python/advance.md)
 
