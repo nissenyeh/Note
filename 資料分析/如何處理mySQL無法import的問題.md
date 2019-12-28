@@ -4,7 +4,7 @@
 
 2. 如果匯入csv時出現，無法直接使用existing table，就可以先匯到新的table，然後再用以下語法合併表格
 
-```
+```sql
 INSERT INTO dcard.myTable (
     id, 
     title, 
