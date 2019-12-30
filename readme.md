@@ -57,16 +57,20 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - 考試會設計state machine去設計ACK/NAK的內容
 
 
-### Database & MySQL : 台大計算資料庫管理（筆記）
+### Database & MySQL : 資料庫管理
 
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
 - [實用SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
+- [實用技巧](資料庫管理/實用語法.md)：
+    - 如何複製A schema的表格到B schema？
+    - 如何插入資料即使primary key重複？
 - [資料庫機制](資料庫管理/資料庫機制.md)：資料庫架構、機制（鎖定機制，鎖定機制）
 - [資料庫倉儲](資料庫管理/資料倉儲.md)
 - [交易（Transaction）& ACID、例程（Routines）、自動觸發（Trigger）](資料庫管理/交易.md)：如何保證交易（Transaction）執行不被中斷？什麼是ACID？怎麼樣可以做自訂的SQL組合技？怎麼樣自動觸發SQL指令？
 - [巨量資料與數據分析](資料庫管理/巨量資料與數據分析.md)
 - [實用SQL練習](資料庫管理/mysqlQA.md)：一些練習題目
 - [作業](資料庫管理/作業.md)：一些練習題目
+-
 - [Greater China catering market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 - [RDBMS資料庫淺談](資料庫管理/資料庫淺談.md)
 
