@@ -30,6 +30,7 @@ David,Fen
 - `file.readlines()`：會把csv的每一行當成元素丟入陣列
 
 ```py
+import csv
 exp=[]
 with open('exp.txt', 'r') as file:
     for data in file.readlines():
@@ -51,6 +52,7 @@ print(exp)
 執行以下程式碼
 
 ```py
+import csv
 with open('exp.txt', 'r') as csvfile:
     print(list(csv.reader(csvfile)))
 ```
