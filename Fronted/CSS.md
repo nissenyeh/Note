@@ -14,6 +14,8 @@
 
 # 排版
 
+- flex置中排版
+
 ```css
 body {
   height: 500px;
