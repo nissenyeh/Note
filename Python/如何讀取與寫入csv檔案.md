@@ -10,19 +10,17 @@ Jean,Jane
 Kevin,Jeffery
 David,Fen
 ```
-希望可以輸出為：
+希望可以輸出為以下，可以使用 `file.readlines()`
 
 ```js
 ['Nissen,Tim', 'Jean,Jane', 'Kevin,Jeffery', 'David,Fen']
 ```
-> 可以使用 file.readlines()
 
-或是
+或是以下可以使用 `csv.reader(file) `
 
 ```js
 [['Nissen','Tim'], ['Jean','Jane'], ['Kevin','Jeffery'], ['David','Fen']]
 ```
-> 可以使用 csv.reader(file) 
 
 可以使用以下函式
 
