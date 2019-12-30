@@ -6,6 +6,37 @@
 - `.one .two`：one下面所有的two都會被選到
 - `.one > img`：class為header下第一層碰到的元素為img，此img才會被選到
 
+# SCSS
+
+- `.one { &.two {} }`:等同於`.one.two`
+- `.one { .two {} }`:等同於`.one .two`
+
+```css
+.one {
+    &.two{
+       background:blue;
+    }
+}
+
+/* compiles to: */
+.one.two {
+    background: blue;
+}
+```
+
+
+```css
+.one {
+    .two{
+       background:blue;
+    }
+}
+
+/* compiles to: */
+.one .two {
+    background: blue;
+}
+```
 
 # 有趣的屬性
 
