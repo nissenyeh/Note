@@ -60,7 +60,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 ### Database & MySQL : 資料庫管理
 
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
-- [實用SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
+- [基本SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
 - [實用技巧](資料庫管理/實用語法.md)：
     - 如何複製A schema的表格到B schema？
     - 如何插入資料即使primary key重複？
