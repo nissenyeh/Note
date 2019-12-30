@@ -5,6 +5,7 @@
 2. 如果匯入csv時出現，無法直接使用existing table，就可以先匯到新的table，然後再用以下語法合併表格
 
 ```sql
-INSERT IGNORE INTO dcard.myTable    -- ignore表示不跑出錯誤，即使有重複
-SELECT * FROM  dcard.newTable
+INSERT IGNORE INTO myschema.myTable    -- ignore表示不跑出錯誤，即使有重複
+
+SELECT * FROM myschema.newTable
 ```
