@@ -32,6 +32,7 @@ mkdir # make directory
 mkdir -p a/b/c # 一次建立一連串的路徑
 find ./ -name 'hi' # 從 ./開使找名為hi的檔案
 grep -r 'text' file   # 從 file 檔案中找到'text'文字
+grep -rl 'text' file # 只回覆有'text'文字的檔名，而不要把所有文字列出來
 wget http://goo.gl/12345 # 發送get指令
 ```
 
