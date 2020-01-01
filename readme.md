@@ -20,7 +20,6 @@ My notes about software development
 - [Question](JavaScript/Question.md)
 - [實用的JS算法](JavaScript/實用.md)
 
-
 ## Programming Foundation
 
 - [Linux: Command line](Basic/commandline.md)
@@ -42,8 +41,6 @@ My notes about software development
 - [交易（Transaction）& ACID、例程（Routines）、自動觸發（Trigger）](資料庫管理/交易.md)：如何保證交易（Transaction）執行不被中斷？什麼是ACID？怎麼樣可以做自訂的SQL組合技？怎麼樣自動觸發SQL指令？
 - [巨量資料與數據分析](資料庫管理/巨量資料與數據分析.md)
 - [實用SQL練習](資料庫管理/mysqlQA.md)：一些練習題目
-- [作業](資料庫管理/作業.md)：一些練習題目
--
 - [Greater China catering market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 - [RDBMS資料庫淺談](資料庫管理/資料庫淺談.md)
 
