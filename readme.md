@@ -33,9 +33,7 @@ My notes about software development
 
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
 - [基本SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
-- [實用技巧](資料庫管理/實用語法.md)：
-    - 如何複製A schema的表格到B schema？
-    - 如何插入資料即使primary key重複？
+- [實用技巧](資料庫管理/實用語法.md)：複製schema / 插入primary key重複的資料 / 字串轉時間 / 根據時間列出資料
 - [資料庫機制](資料庫管理/資料庫機制.md)：資料庫架構、機制（鎖定機制，鎖定機制）
 - [資料庫倉儲](資料庫管理/資料倉儲.md)
 - [交易（Transaction）& ACID、例程（Routines）、自動觸發（Trigger）](資料庫管理/交易.md)：如何保證交易（Transaction）執行不被中斷？什麼是ACID？怎麼樣可以做自訂的SQL組合技？怎麼樣自動觸發SQL指令？
