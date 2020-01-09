@@ -60,7 +60,18 @@ where SEMESTER.year =2019
 
 > 不管是用哪種方式，可以發現 Join很多次都還是表格，因為 Relational algebra 有封閉性
 
+#### 3. 垂直合併 Union
 
+把兩個幾乎一樣的table合併起來
+
+（任兩筆完全相同紀錄的會被合併，兩張表格有相同之欄位，且相對應之欄位有相同值域））
+```sql
+SELECT *
+FROM Customer_TPE
+UNION
+SELECT *
+FROM Customer_HKG
+```
 
 ###  表格table的「合併計算」Group by
 
