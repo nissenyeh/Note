@@ -6,10 +6,24 @@
 - `.one .two`：one下面所有的two都會被選到
 - `.one > img`：class為header下第一層碰到的元素為img，此img才會被選到
 
+## CSS
+
+- `:not()`:不是
+- `:last-child`:身為最後一個元素
+- `:after`:在元素後面加東西
+
+```css
+    :not(:last-child):after {    
+        /* 非最後一個child的元素後面加上'|'  */
+        content:"|";
+    }
+```
+
 # SCSS
 
 - `.one { &.two {} }`:等同於`.one.two`
 - `.one { .two {} }`:等同於`.one .two`
+- `.one { > two {} }`:等同於`.one > two`
 
 ```css
 .one {

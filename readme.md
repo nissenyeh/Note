@@ -43,6 +43,12 @@ My notes about software development
 - [Greater China catering market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 - [RDBMS資料庫淺談](資料庫管理/資料庫淺談.md)
 
+### 資料結構與演算法
+
+目標：本週學完2講
+
+https://www.youtube.com/watch?v=QkgvM8e6rpY
+- [「資料結構」第一講：Data Abstraction and "bag" (1): OOA, OOD, and OOP](資料結構/資料結構01.md)
 
 ### data analysis：數據分析
 
