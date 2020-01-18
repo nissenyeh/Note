@@ -1,7 +1,8 @@
 # Django 和 MySQL的連接
 
 
-# 安裝與設定
+# 設定讓Django 和 MySQL連線
+
 - 安裝`PyMySQL`（一種Python3.x 版本中用於連接MySQL的庫）
 
 ```py
@@ -31,11 +32,7 @@ DATABASES = {
 }
 ```
 
-
-
-# 常見的mySQL和Django聯繫
-
-- 把MySQL的ER model還原回成model
+- 把MySQL的表格還原回成Django model
 
 ```py
 python3 manage.py inspectdb
@@ -43,7 +40,47 @@ or
 python3 manage.py inspectdb > APP資料夾/models.py  
 ```
 
-如果出現問題參考這篇 https://stackoverflow.com/questions/55657752/django-installing-mysqlclient-error-mysqlclient-1-3-13-or-newer-is-required
+> 如果出現問題參考這篇 https://stackoverflow.com/questions/55657752/django-installing-mysqlclient-error-mysqlclient-1-3-13-or-newer-is-required
+
+
+### 將MySQL資料顯示到網站
+
+- 設定超級使用者
+
+```py
+python3 manage.py createsuperuser
+```
+
+- 註冊APP
+
+```py
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myapp' #app名稱
+]
+```
+
+- 在Admin的後台嘗試顯示資料
+
+admin.py
+```py
+from django.contrib import admin
+
+# Register your models here.
+from .models import Table
+
+class Firstdataappadmin(admin.ModelAdmin):
+    list_display=('id','title','comment_count','like_count','createdat','school','content') # 欄位
+
+admin.site.register(Table,Firstdataappadmin)  # 註冊模型
+```
+
+### 刪改
 
 - 把model改動的東西改回
 
@@ -51,5 +88,3 @@ python3 manage.py inspectdb > APP資料夾/models.py
 python3 manage.py makemigrations #記錄下你所有的關於models.py的改動
 python3 manage.py migrate # 將該改動作用到數據庫，比如產生table之類
 ```
-
-python3 manage.py createsuperuser
