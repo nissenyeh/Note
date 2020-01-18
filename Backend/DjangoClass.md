@@ -20,7 +20,7 @@
 pip3 install Django
 ```
 
-- 開啟專案，然後會出現重要的manage.py以及setting檔案。
+- 利用startproject啟動一個專案，產生重要的manage.py以及setting等重要的設定檔案
 
 ```shell
 django-admin startproject <<專案名稱>>
@@ -28,7 +28,7 @@ django-admin startproject <<專案名稱>>
 
 > 利用把「參數」 傳到manage.py 的方式來操作程式
 
-- 創業APP（利用 manage.py 這隻檔案去創建APP）
+- 利用startapp創建一個app專案本身（剛剛只有設定檔案）
 
 ```
 python3 manage.py startapp <<App名稱>>
@@ -250,3 +250,4 @@ Post.objects.get(name='小明') #可以把欄位name=小明的「唯一筆」資
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  #告訴它static在哪裡
 ```
+

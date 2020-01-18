@@ -127,7 +127,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 ### Python Django 網站設計: 臺大資訊訓練班（筆記）
 
 - [基本介紹](Backend/DjangoClass.md)
-
+- [Django和MySQL的連接](Backend/Django和MySQL的連接.md)
 
 ### Charts
 - [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
