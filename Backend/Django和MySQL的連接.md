@@ -87,3 +87,73 @@ admin.site.register(Table,Firstdataappadmin)  # 註冊模型
 python3 manage.py makemigrations #記錄下你所有的關於models.py的改動
 python3 manage.py migrate # 將該改動作用到數據庫，比如產生table之類
 ```
+
+# 撰寫Restful API
+
+- 安裝`djangorestframework`
+
+```
+pip3 install djangorestframework
+
+```
+
+- 在settings裡面，啟用`rest_framework`，並且設定Pagination，可以設定一頁回傳多少data
+
+```py
+INSTALLED_APPS = [
+    ...
+    'rest_framework', # 啟用rest_framework
+]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination', # 設定Pagination
+    'PAGE_SIZE': 10    # 一頁 return 多少資料
+}
+```
+
+- 在App下面寫serializers，把model的資料轉成JSON
+
+```py
+from django.contrib.auth.models import User, Group
+from rest_framework import serializers
+
+
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ['url', 'username', 'email', 'groups']
+```
+
+- 在App下面寫views，讓url引發對應指令
+
+```py
+from django.contrib.auth.models import User
+from rest_framework import viewsets
+from tutorial.quickstart.serializers import UserSerializer
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+```
+
+- 在Project下面寫urls.py
+
+```py
+from django.urls import include, path
+from rest_framework import routers
+from tutorial.quickstart import views
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
+urlpatterns = [
+    path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+]
+```
