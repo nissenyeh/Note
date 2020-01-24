@@ -51,6 +51,9 @@ My notes about software development
 https://www.youtube.com/watch?v=QkgvM8e6rpY
 - [「資料結構」第一講：Data Abstraction and "bag" (1): OOA, OOD, and OOP](資料結構與演算法/資料結構01.md)
 
+### Leetcode
+- [leetCode:easy](leetcode/easy.md)
+
 
 
 ## C++
