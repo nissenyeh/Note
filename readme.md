@@ -47,7 +47,7 @@ My notes about software development
 
 
 - [crack the coding interview](資料結構與演算法/cracking.md)：實在是一本好書！（規劃一下學習）
-
+- [容易忘記的Python語法](資料結構與演算法/容易忘記的Python語法.md)：面試前可以複習一下
 https://www.youtube.com/watch?v=QkgvM8e6rpY
 - [「資料結構」第一講：Data Abstraction and "bag" (1): OOA, OOD, and OOP](資料結構與演算法/資料結構01.md)
 
@@ -104,7 +104,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 - [Python Foundation](Python/basic.md)
 - [Python Advance](Python/advance.md)
-
+- [容易忘記的Python語法](資料結構與演算法/容易忘記的Python語法.md)
 
 ## 實用技巧
 
