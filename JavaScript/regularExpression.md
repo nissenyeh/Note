@@ -35,7 +35,7 @@ first Last 和 first.Last  和 first..Last  和 first...Last都會匹配 first.+
 ```
 
 
-# 實用技能
+# 實用技能 Ternary if operator
 
 
  `判斷 ? a : b`

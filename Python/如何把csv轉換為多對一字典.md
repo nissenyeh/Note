@@ -81,7 +81,7 @@ with open(file, newline='') as csvfile:
 myDict = {}
 
 for row in data:
-    myDict.update(**dict.fromkeys(row, row[3]))
+    myDict.update(dict.fromkeys(row, row[3]))
 ```
 
 - `dict.fromkeys([儲存key陣列],value)`：會把陣列中的所有值當作key，並為一輸出value。例如

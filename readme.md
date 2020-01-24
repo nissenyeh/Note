@@ -45,10 +45,20 @@ My notes about software development
 
 ### 資料結構與演算法
 
-目標：本週學完2講
+
+- [crack the coding interview](資料結構與演算法/cracking.md)：實在是一本好書！（規劃一下學習）
 
 https://www.youtube.com/watch?v=QkgvM8e6rpY
-- [「資料結構」第一講：Data Abstraction and "bag" (1): OOA, OOD, and OOP](資料結構/資料結構01.md)
+- [「資料結構」第一講：Data Abstraction and "bag" (1): OOA, OOD, and OOP](資料結構與演算法/資料結構01.md)
+
+
+
+## C++
+
+- 完成進度：「程式設計」第一 - 三講
+- 目前進度：「程式設計」第四講：Variables and Arrays
+
+- [C++基本概念](C++/01.md)
 
 ### data analysis：數據分析
 
