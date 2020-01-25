@@ -21,6 +21,8 @@ for x in gen:
     print(x)
 ```
 
+- `elif` 等同於 `else if `
+
 # 做字典
 
 ```py
@@ -30,7 +32,12 @@ for x in gen:
         else: d[i] =1
 ```
 
-# 餘數
+# int
 
-n//2：求除數
-n%2：求餘數
+- int沒有len值，只有str和arr才有，所以不能用int[3]之類的
+- n//2：求除數
+- n%2：求餘數
+
+# list
+
+- 增加陣列只能用append，不能用arr[n]=4 來直接指定擴充值。

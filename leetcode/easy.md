@@ -243,3 +243,44 @@ class Solution:
 - 好像有點簡單
 - Runtime: 52 ms, faster than 73.08% of Python3 online submissions for Find Numbers with Even Number of Digits.
 - Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Find Numbers with Even Number of Digits.
+
+### 10.subtract-the-product-and-sum-of-digits-of-an-integer
+
+```py
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        POD=1 
+        SOD=0
+        for i in range(len(str(n))):
+            POD = POD * int(str(n)[i])
+            SOD += int(str(n)[i])
+        return POD-SOD
+```
+
+- 蠻簡單
+- Runtime: 60 ms, faster than 8.25% of Python3 online submissions for Subtract the Product and Sum of Digits of an Integer.
+- Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Subtract the Product and Sum of Digits of an Integer.
+- 小心犯的錯誤：
+    - int沒有len值
+    - 只有str和arr才有
+
+
+### 11.fibonacci-number
+
+```py
+class Solution:
+    def fib(self, N: int) -> int:
+        if N==0:
+            return 0
+        elif N ==1:
+            return 1
+        else:
+            arr=[0,1]
+            for i in range(2,N):
+                arr.append(arr[i-1]+arr[i-2])
+            return arr[N-1]+arr[N-2]
+```
+
+- Runtime: 28 ms, faster than 67.83% of Python3 online submissions for Fibonacci Number.
+- Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Fibonacci Number.
+- 小心犯的錯誤：增加陣列只能用append，不能用arr[n]=4 來直接指定擴充值。

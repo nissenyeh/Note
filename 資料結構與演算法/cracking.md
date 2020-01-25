@@ -72,3 +72,43 @@
 # Space Complexity 
 
 從p.52開始看
+
+
+# 如何準備case
+
+- 嘗試自行解決問題，並務必考慮空間和時間效率
+- 將code寫在紙上，習慣用紙來寫程式
+- 在紙上測試您的代碼。這意味著要測試general cases, base cases, error cases等。您在面試時需要這樣做，因此最好事先進行練習。
+- 將您的書面代碼原樣輸入計算機。您可能會犯很多錯誤。列出全部您所犯的錯誤，以便您可以在精算面試中牢記這些錯誤。
+
+嘗試進行盡可能多的模擬採訪。您和朋友可以輪流互相進行模擬面試。儘管您的朋友可能不是專家面試官，但他或她仍然可以引導您解決編碼或算法問題。
+
+## Core Data Structures, Algorithms, and Concepts
+
+- 大多數面試官不會詢問有關binary tree balancing or other complex algorithms。 坦白說，由於離開學校好幾年，他們可能也不記得這些算法。
+通常只要求您了解基本知識。 以下絕對必要知識的列表：
+
+Data Structures：
+- Linked Lists
+- Trees, Tries &Graphs
+- Stacks & Queues 
+- Heaps 
+- Vectors/ArrayLists
+- Hash Tables 
+
+Algorithms:
+- Breadth-First Search 
+- Depth-First Search
+- Binary Search
+- Merge Sort 
+- Quick Sort 
+
+Concepts
+- Bit Manipulation 
+- Memory (Stack vs. Heap) 
+- Recursion 
+- Dynamic Programming
+- Big 0 Time & Space 
+
+對於以上每個主題，請確保了解如何使用和實現它們，並在知道什麼情況適用，還有他的space and time complexity，並練習實現數據結構和算法（在紙上，然後在計算機上）。特別是` hash tables`是非常重要的主題，確保你很了解這個資料結構。
+
