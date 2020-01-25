@@ -41,3 +41,18 @@ for x in gen:
 # list
 
 - 增加陣列只能用append，不能用arr[n]=4 來直接指定擴充值。
+
+# str
+
+- str 可以直接用for把word遍歷出來，不用算長度，丟到array中
+- str可以用字串相加，不用先用array處理再轉成str
+
+```py
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        newString = ""
+        for word in address:
+            if word==".":newString += "[.]"
+            else: newString += word
+        return newString
+```
