@@ -285,7 +285,7 @@ class Solution:
 - Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Fibonacci Number.
 - 小心犯的錯誤：增加陣列只能用append，不能用arr[n]=4 來直接指定擴充值。
 
-### 12.
+### 12.defanging-an-ip-address
 
 ```py
 class Solution:
