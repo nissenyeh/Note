@@ -26,7 +26,6 @@ UTM（Urchin Tracking Module）簡單來說就是一個追蹤的方式，他在�
 - [不同的參數](https://support.google.com/google-ads/answer/6305529?hl=zh-Hant#ttdsa)
 - [最終到達網址尾碼](https://support.google.com/google-ads/answer/9054021?hl=zh-Hant)
 - [什麼是追蹤範本](https://support.google.com/google-ads/answer/6273460?hl=zh-Hant)
-- 
 
 
 ```
