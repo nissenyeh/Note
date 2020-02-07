@@ -29,7 +29,7 @@ UTM（Urchin Tracking Module）簡單來說就是一個追蹤的方式，他在�
 
 
 ```
-{lpurl}?utm_device={device}&utm_term={}&keyword={keyword}&matchtype={matchtype}
+{lpurl}?utm_device={device}&keyword={keyword}&matchtype={matchtype}
 ```
 
 Exp:
