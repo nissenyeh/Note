@@ -2,7 +2,7 @@
 
 ## 說明
 
-- 主要使用[tabletop.js](https://github.com/jsoma/tabletop)的套件
+- 主要使用[tabletop.js](https://github.com/jsoma/tabletop)的套件（看它的說明很清楚）
 - 小心權限的問題
 
 ## 步驟
@@ -36,7 +36,7 @@ dataParser(data, tabletop) {
 
     // 合併不同sheet的資料  
     var arr = arr.concat(sheet1, sheet2, sheet3, sheet4); 
-    
+
     // 製作自己的API
     this.resource = arr.map((item, index)=> {
         return { 
