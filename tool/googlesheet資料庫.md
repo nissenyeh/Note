@@ -1,10 +1,10 @@
 # 以 Google Sheet 為資料庫做自己的API
 
-- 使用一個叫做[tabletop.js](https://github.com/jsoma/tabletop)的套件
+主要使用[tabletop.js](https://github.com/jsoma/tabletop)的套件
 
 1. 開啟google sheet
-    - 在sheet上面的`File`選擇`Publish to the web`（即使連結用不到，好像也一定要做這個步驟）
-    - 使用共享並選擇`Anyone with a link`
+    - 在sheet上面的`檔案`選擇`發佈到網路`（即使連結用不到，好像也一定要做這個步驟）
+    - 選擇`共用`並選擇`知道連結的人均可以檢視`
     - 把連結貼到`publicSpreadsheetUrl`中
 
 2. 獲取google sheet資料（以資源申請系統為例）
@@ -56,6 +56,15 @@ dataParser(data, tabletop) {
 ```
 
 3. 完成自己的API!
+
+```json
+0: {category: "物資", title: "【書籍】西恩．德維尼↵《林書豪精神－堅毅》", qualifications: Array(2), applyDeadline: "-", announceDeadline: "-", …}
+1: {category: "物資", title: "【家電】家樂福小家電", qualifications: Array(3), applyDeadline: "2020/1/17 23:59:00", announceDeadline: "2020/1/30 18:00", …}
+2: {category: "課程企劃", title: "免費 6 個月VoiceTube APP Pro 付費等級帳號", qualifications: Array(4), applyDeadline: "2019/9/29 23:59", announceDeadline: "2019/10/15 18:00", …}
+3: {category: "課程企劃", title: "哿哿設計-美術課教案x桌遊合作", qualifications: Array(3), applyDeadline: "2019/12/22 23:59", announceDeadline: "-", …}
+4: {category: "專業協助", title: "領導力教練(Coach)會談", qualifications: Array(2), applyDeadline: "2019/09/17 18:30", announceDeadline: "2019/10/17 18:30", …}
+5: {category: "經費", title: "測試資料", qualifications: Array(1), applyDeadline: "2020/01/05", announceDeadline: "", …}
+```
 
 
 ## 字串換行的處理
