@@ -27,14 +27,16 @@ Tabletop.init(
 
 dataParser(data, tabletop) {
     arr = []
-     // 獲取不同sheet的資料
 
+     // 獲取不同sheet的資料
     var sheet1 = data['sheet1'].elements 
     var sheet2 = data['sheet2'].elements
     var sheet3 = data['sheet3'].elements
     var sheet4 = data['sheet4'].elements
+
     // 合併不同sheet的資料  
     var arr = arr.concat(sheet1, sheet2, sheet3, sheet4); 
+    
     // 製作自己的API
     this.resource = arr.map((item, index)=> {
         return { 
