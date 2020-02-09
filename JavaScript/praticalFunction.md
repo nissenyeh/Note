@@ -59,15 +59,12 @@ arr.forEach( item => result.push(item))
 
 ``` JavaScript
 var arr = [1,2,3,4]
-var result = arr.Map( item=> item*2 ); 
+var result = arr.map(item=> item*2 ); 
 // [2,4,6,8]
-var result2 = arr.Map((item, index)=> {
+var result2 = arr.map((item, index)=> {
   return { name: item, order: index+1 } 
 }) 
 // [{name:1 , order:1},{name:2 , order:2},{name:3,order:3},{name:4 ,order:4}]
-var result2 = arr.Map ((item, index)=> ({
-    { name: item, order: index+1 } 
-  }))
 ```
 - if using {} , there is`return`
 - if useing (), there is no `return`

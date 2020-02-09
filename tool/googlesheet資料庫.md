@@ -1,6 +1,11 @@
-# 以 Google Sheet 為資料庫做自己的API
+# 如何以 Google Sheet 為資料庫做自己的API？
 
-主要使用[tabletop.js](https://github.com/jsoma/tabletop)的套件
+## 說明
+
+- 主要使用[tabletop.js](https://github.com/jsoma/tabletop)的套件
+- 小心權限的問題
+
+## 步驟
 
 1. 開啟google sheet
     - 在sheet上面的`檔案`選擇`發佈到網路`（即使連結用不到，好像也一定要做這個步驟）
@@ -55,7 +60,7 @@ dataParser(data, tabletop) {
 },
 ```
 
-3. 完成自己的API!
+3. API就完成了
 
 ```json
 0: {category: "物資", title: "【書籍】西恩．德維尼↵《林書豪精神－堅毅》", qualifications: Array(2), applyDeadline: "-", announceDeadline: "-", …}
