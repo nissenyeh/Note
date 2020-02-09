@@ -62,7 +62,7 @@ dataParser(data, tabletop) {
 
 3. API就完成了
 
-```json
+```js
 0: {category: "物資", title: "【書籍】西恩．德維尼↵《林書豪精神－堅毅》", qualifications: Array(2), applyDeadline: "-", announceDeadline: "-", …}
 1: {category: "物資", title: "【家電】家樂福小家電", qualifications: Array(3), applyDeadline: "2020/1/17 23:59:00", announceDeadline: "2020/1/30 18:00", …}
 2: {category: "課程企劃", title: "免費 6 個月VoiceTube APP Pro 付費等級帳號", qualifications: Array(4), applyDeadline: "2019/9/29 23:59", announceDeadline: "2019/10/15 18:00", …}
