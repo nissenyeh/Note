@@ -113,3 +113,36 @@ for (let i of list){
   console.log(i)  // 3,4,5
 }
 ```
+
+### 最常搞混的函式 Slice, Splice,Split
+
+- slice：把原陣列的部分複製下來（撕下來）
+
+```js
+const arr = ['Jan', 'March', 'April', 'June'];
+arr.slice(2) // 從2開始撕下來 ['April', 'June']
+arr.slice(1,3) // 把2~3的元素撕下來['March', 'April']
+```
+
+- splice：把原陣列刪除/新增
+
+```js
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb'); // 從1開始，刪除0的元素，把'Feb'丟進去
+
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, 'May');  // 從4開始，刪除1個元素，把'May'丟進去
+
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
+```
+
+- split: 把字串切割
+
+```js
+const str = 'The quick brown fox jumps over the lazy dog.';
+const words = str.split(' ');
+console.log(words[3]); // fox
+```

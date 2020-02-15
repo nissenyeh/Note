@@ -9,7 +9,7 @@ My notes about software development
 - [JavaScript Foundation](JavaScript/Basic.md)
 - [JavaScript Prototype](JavaScript/prototype.md)
 - [Object destructuring, Array destructuring, Spread Operator, Mapping, Arrow Functiom, default parameters,rest parameters  ](JavaScript/praticalSkills.md)
-- [ForEach, Map, Filter, Find, join, for in, for of  ](JavaScript/praticalFunction.md)
+- [ForEach, Map, Filter, Find, join, for in, for of, Slice/Splice/Split](JavaScript/praticalFunction.md)
 - [Enumeration: Objct.keys(), Object.getOwnPropertyNames(), Object.propertyIsEnumerable(),for in](JavaScript/enumerationProperty.md)
 - [error handling: Try catch](JavaScript/errorHandling.md)
 - [Constructor：function Constructor, Class Constructor, Object](JavaScript/objectConstructor.md)
