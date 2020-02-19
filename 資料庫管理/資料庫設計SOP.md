@@ -17,7 +17,7 @@
 
 - 檔案-匯入-上傳csv－插入新工作表
 
-## 如何利用lookup
+## 如何利用google sheet 的 vlookup進行對照？（未來要去尋找Python的做法）
 
 `vlookup(被查詢的字詞, 字典的範圍,2,FALSE)`
 
