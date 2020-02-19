@@ -31,6 +31,7 @@ My notes about software development
 
 ### Database & MySQL : 資料庫管理
 
+- [資料庫設計SOP](資料庫管理/資料庫設計SOP.md)：資料庫設計
 - [ER模型的繪製技巧](資料庫管理/ER_model.md)：介紹如何繪製ER模型，還有認識什麼是Entiry、Relationship、Attribute
 - [基本SQL語法](資料庫管理/mysql.md)：介紹mysql的基本操作
 - [實用技巧](資料庫管理/實用語法.md)：複製schema / 插入primary key重複的資料 
