@@ -143,7 +143,7 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 
 
 - [Django安裝教學](Backend/Django安裝教學.md)
-- [Django和MySQL的連接](Backend/Django和MySQL的連接.md)
+- [Django如何和mySQL資料庫連接以及使用REST framework](Backend/Django和MySQL的連接.md)
 - [Django Setting and Base Connection](Backend/Django_setting.md)
 
 ### Charts
