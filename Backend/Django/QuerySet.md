@@ -26,17 +26,16 @@ Post.objects.get(name='小明') #可以把欄位name=小明的「唯一筆」資
 
 ### 常用方法
 
-code           | 作用  | SQL | 
+code           | 作用  | SQL對應 | 
 --------------|:-----:|:-----:|
 Database.objects.get(pk=1)    | 找到第pk筆資料 | | 
-Database.objects.all()   | 顯示所有資料 | SELECT ＊ FROM "myapp_mymodel"| 
-Database.objects.filter(title__contains='Trip')| 搜尋資料| select * from “schema” where title like 'trip'; | 
-Database.objects.values('name')   | 搜索，會回傳一個像 [{'name':'名字1'},{'name':'名字2'}]的list | select name from “schema” | 
+Database.objects.all()   | 顯示所有資料 | SELECT ＊ FROM "schema"| 
+Database.objects.filter(title__contains='Trip')| 搜尋特定條件的資料| select * from “schema” where title like 'trip'; | 
+Database.objects.values('name')   | 搜索特定欄位，會回傳一個像 [{'name':'名字1'},{'name':'名字2'}]的list | select name from “schema” | 
 Database.objects.create(title='First Cup') | 建立資料 | | 
-Database.objects.distinct()   | 去重複 | | 
+Database.objects.distinct()   | 去除重複 |select distinct(*) from “schema”  | 
 
 - __contain 在乎大小寫：Database.objects.filter(name__contains="e") 
 - __icontains 不在乎大小寫：Database.objects.filter(name__icontains="e") 
 
-- querySet.distinct() 去重複
 
