@@ -4,6 +4,20 @@
 My notes about software development 
 我的軟體開發筆記（持續更新）
 
+
+## Back End 
+
+- [Database Basic](Backend/Basic_Database.md)
+
+### Python Django 
+
+
+- [Django安裝教學](Backend/Django/安裝與教學.md)
+- [Django如何和mySQL資料庫連接以及使用REST framework](Backend/Django/連接mySQL和寫restful.md)
+- [案例：如何回傳員工名稱的JSON陣列？](Backend/Django/回傳陣列.md)
+- [Django Setting and Base Connection](Backend/Django_setting.md)
+
+
 ## JavaScript
 
 - [JavaScript Foundation](JavaScript/Basic.md)
@@ -19,6 +33,7 @@ My notes about software development
 - [What is `this` ? ](JavaScript/this.md)
 - [Question](JavaScript/Question.md)
 - [實用的JS算法](JavaScript/實用.md)
+
 
 ## Programming Foundation
 
@@ -135,16 +150,6 @@ Client-Server 和 P2P 架構是 host 常見的兩種互動關係
 - [命名問題收集（更新）](Fronted/Naming.md)
 
 
-## Back End 
-
-- [Database Basic](Backend/Basic_Database.md)
-
-### Python Django 
-
-
-- [Django安裝教學](Backend/Django/安裝與教學.md)
-- [Django如何和mySQL資料庫連接以及使用REST framework](Backend/Django/連接mySQL和寫restful.md)
-- [Django Setting and Base Connection](Backend/Django_setting.md)
 
 ### Charts
 - [Chart Survey: ApexCharts、ECharts、Hichart、ChartJS](Fronted/ChartSurvey.md)
