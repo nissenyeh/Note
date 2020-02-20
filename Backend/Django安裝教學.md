@@ -13,6 +13,7 @@
  - T（template）：當回傳html的結果前，view可以去把資料丟進去template續染，然後再回傳。
 
 
+
 ## 啟用Django網站
 
 - 安裝Django
@@ -41,7 +42,9 @@ python3 manage.py startapp <<App名稱>>
 python3 manage.py runserver
 ```
 
-## 套件
+[如何和資料庫連接以及使用REST framework](./Django和MySQL的連接.md)
+
+## 常見資料夾結構
 
 - `contrib`：各種小工具的包，包含admin/auth/redirects/sessions/sites
 
@@ -120,11 +123,13 @@ admin.site.register(Post,muticolumn)
 ```
 
 
-# 2. View: 提供網站回應，當URL被分過來，View再根據是POST/GET然後去跟MODEL
+# 2. View: 
 
-- Url會和view設定再一起，當相關的url被觸發時，就會觸動來自view的函式
-- REST 提供ModelViewSet類別，只要要給他`queryset` 跟`serializer_class`，就可以享用CRUD的功能
-- 提供.list(), .retrieve(), .create(), .update(), .partial_update(), and .destroy()
+提供網站回應，當URL被分過來，View再根據是POST/GET然後去跟MODEL
+
+- url會和view設定再一起，當相關的url被觸發時，就會觸動來自view的函式
+- 如果使用 `REST` 它會提供ModelViewSet類別，只要要給他`queryset` 跟`serializer_class`，就可以享用CRUD的功能
+- 以上也提供.list(), .retrieve(), .create(), .update(), .partial_update(), and .destroy()
 >  ModelViewSet繼承自GenericAPIView，GenericAPIView則繼承自View（Django的class)
 
 
@@ -161,7 +166,8 @@ def homepage(request):
 > local可以把所有的「區域變數」抓出來
 
 
-Restapi的寫法
+### `REST` 的寫法
+
 ```py
 # Create your views here.
 from musics.models import Music
@@ -214,9 +220,56 @@ Post.objects.get(name='小明') #可以把欄位name=小明的「唯一筆」資
  <p>{{person.name}}<p>
 ```
 
+# 3.Serializers：
+
+- 專門把Model複雜的數據結構轉換成JSON或是XML之類的其他格式
+
+```py
+{
+  id:...,
+  song:...,
+  singer:...,
+  last_modify_data:...,
+  created:...
+}
+```
+如果想要這樣的JSON就可以這樣寫
+
+```py
+
+from rest_framework import serializers
+from musics.models import Music
+
+class MusicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Music
+        fields = ('id', 'song', 'singer', 'last_modify_date', 'created')
+```
+
+- `model`當中可以指定是哪個模組要序列化
+- `fields`當中可以設定JSON格式有哪些屬性。
 
 
-# 3. Template：提供好看的html樣板
+### 複雜的JSON格式
+
+```py
+class CaseSerializer(serializers.ModelSerializer):
+    disease = DiseaseNameSerializer()
+    test_disease = DiseaseNameSerializer()
+    symptoms = serializers.SerializerMethodField()
+    PEs = serializers.SerializerMethodField()
+    RFs = serializers.SerializerMethodField()
+```
+- SerializerMethodField() = get_XXX
+```py
+  def get_symptoms(self, obj):
+      locale = self.context['request'].query_params.get('locale', 'zh_cn')
+      queryset = Case.objects.symptoms(pk=obj.id, locale=locale)
+      print(Case.objects)
+      return queryset
+```
+
+# 4. Template：提供好看的html樣板
 
 - 在專案的根目錄建立一個template的資料夾，放index.html進去
 - 在template中可以寫python的語法，然後Django會把檔案渲染後，然後在把編譯好的html丟出去。
@@ -300,54 +353,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  #告訴它static在哪裡
 ```
 
 
-# 4.Serializers：把Model變成JSON囉！（Model跟View的溝通橋樑）
-
-- 專門把Model複雜的數據結構轉換成JSON或是XML之類的其他格式
-
-```py
-{
-  id:...,
-  song:...,
-  singer:...,
-  last_modify_data:...,
-  created:...
-}
-```
-如果想要這樣的JSON就可以這樣寫
-
-```py
-
-from rest_framework import serializers
-from musics.models import Music
-
-class MusicSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Music
-        fields = ('id', 'song', 'singer', 'last_modify_date', 'created')
-```
-
-- `model`當中可以指定是哪個模組要序列化
-- `fields`當中可以設定JSON格式有哪些屬性。
-
-
-### 複雜的JSON格式
-
-```py
-class CaseSerializer(serializers.ModelSerializer):
-    disease = DiseaseNameSerializer()
-    test_disease = DiseaseNameSerializer()
-    symptoms = serializers.SerializerMethodField()
-    PEs = serializers.SerializerMethodField()
-    RFs = serializers.SerializerMethodField()
-```
-- SerializerMethodField() = get_XXX
-```py
-  def get_symptoms(self, obj):
-      locale = self.context['request'].query_params.get('locale', 'zh_cn')
-      queryset = Case.objects.symptoms(pk=obj.id, locale=locale)
-      print(Case.objects)
-      return queryset
-```
 
 #### Shell
 
