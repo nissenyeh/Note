@@ -119,7 +119,43 @@ REST_FRAMEWORK = {
 }
 ```
 
+## serializers
+
 - 在App下面增加`serializers.py`，把model的資料轉成JSON
+
+
+### 什麼是serializers？
+
+serializers是一個用來把queryset（Django中的一種資料結構）轉變成JSON（純字串）的class
+
+```py
+from rest_framework import serializers
+from rest_framework.renderers import JSONRenderer
+
+class Comment(object):  #這是一個純粹的Object
+    def __init__(self, email, content, created=None):
+        self.email = email
+        self.content = content
+        self.created = created
+
+comment = Comment(email='leila@example.com', content='foo bar') #這是一個純粹的Object
+
+print(comment) #印出<course.serializers.Comment object at 0x106e823c8>
+
+class CommentSerializer(serializers.Serializer): #這是一個Serializer
+    email = serializers.EmailField()
+    content = serializers.CharField(max_length=200)
+    created = serializers.DateTimeField()
+
+serializer = CommentSerializer(comment) #把物件丟到，Serializer中
+print(serializer.data) #把物件丟到，Serializer中，印出{'email': 'leila@example.com', 'content': 'foo bar', 'created': None}
+
+json = JSONRenderer().render(serializer.data)
+print(json) #用JSONRenderer().render，最後可以印出'{"email":"leila@example.com","content":"foo bar","created":null}'
+
+```
+
+### 如何使用？
 
 serializers.py是專門把Model複雜的數據結構，轉換成JSON或是XML之類的其他格式
 
