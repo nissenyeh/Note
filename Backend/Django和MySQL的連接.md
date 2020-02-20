@@ -10,7 +10,7 @@ pip3 install PyMySQL
 django-admin startproject project_name #開啟專案
 python manage.py startapp app_name #開啟APP
 ```
-- 設定`__init__.py`讓PyMySQL替代MySQLdb
+- 設定`__init__.py`讓PyMySQL替代MySQLdb（在原始的那個資料夾，不是app的那個）
 
 ```py
 import pymysql
@@ -90,6 +90,15 @@ python3 manage.py migrate # 將該改動作用到數據庫，比如產生table�
 
 # 撰寫Restful API
 
+## REST framework
+
+- REST提供viewsets,ModelsSerializer方便的建構API
+- Model：跟資料庫溝通
+- Serialization：把Model的資料序列化，讓View可以用（Model跟View的溝通橋樑）
+- View：處理CRUD，看URL過來的方法是什麼(POST,GET...etc)，就把回覆傳回去
+
+## install
+
 - 安裝`djangorestframework`
 
 ```
@@ -111,10 +120,10 @@ REST_FRAMEWORK = {
 }
 ```
 
-- 在App下面寫serializers，把model的資料轉成JSON
+- 在App下面增加`serializers.py`，把model的資料轉成JSON
 
 ```py
-from django.contrib.auth.models import User, Group
+from app專案.models import User, Group
 from rest_framework import serializers
 
 
@@ -127,7 +136,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 - 在App下面寫views，讓url引發對應指令
 
 ```py
-from django.contrib.auth.models import User
+from app專案.models import User
 from rest_framework import viewsets
 from tutorial.quickstart.serializers import UserSerializer
 

@@ -1,6 +1,7 @@
 
 # Python與Django課程
 
+- 推薦資源：[Django Girls 學習指南](https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/django/models.html)
 - 網址：http://homepage.ntu.edu.tw/~jfanc/Django.html?clsp=321
 - 密碼：wdp321ers
 
@@ -40,6 +41,10 @@ python3 manage.py startapp <<App名稱>>
 python3 manage.py runserver
 ```
 
+## 套件
+
+- `contrib`：各種小工具的包，包含admin/auth/redirects/sessions/sites
+
 
 # 1. Model: 與資料庫聯繫
 
@@ -47,7 +52,7 @@ python3 manage.py runserver
 
 在使用Django的時候，不需要直接寫SQL指令，而是可以透過Model設定class（相當於資料庫的一個table），寫完後，再讓Django去產生一個中介檔案，然後去操作資料庫。
 
-1. 去model檔案，把表格的欄位設定好。例如
+1. 去model檔案（在app下面），把表格的欄位設定好。例如
 
 - class Post 是 「設定一個名為Post的table」
 - title = models.CharField(max_length=200) 是 「設定一個格式為char的 title的欄位」
@@ -70,6 +75,10 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 ```
+
+> 可以不需要meta屬性
+
+當model改完後，就可進行migration，讓Django幫忙把語言轉成SQL，再讓SQL去更改資料庫
 
 2. `python3 manage.py makemigration` 建立中介檔案（操作資料庫的指令檔案）
 3. `python3 manage.py migrate` 把中介檔案去真的寫入資料庫
@@ -110,9 +119,15 @@ admin.site.register(Post,muticolumn)
 
 ```
 
-# 2. View: 提供網站回應
+
+# 2. View: 提供網站回應，當URL被分過來，View再根據是POST/GET然後去跟MODEL
 
 - Url會和view設定再一起，當相關的url被觸發時，就會觸動來自view的函式
+- REST 提供ModelViewSet類別，只要要給他`queryset` 跟`serializer_class`，就可以享用CRUD的功能
+- 提供.list(), .retrieve(), .create(), .update(), .partial_update(), and .destroy()
+>  ModelViewSet繼承自GenericAPIView，GenericAPIView則繼承自View（Django的class)
+
+
 
 ## 設定Url路徑 
 
@@ -142,7 +157,40 @@ def homepage(request):
     html = template.render(locals()) #把區域變數放進去，然後渲染樣板
     return HttpResponse(html)
 ```
+
 > local可以把所有的「區域變數」抓出來
+
+
+Restapi的寫法
+```py
+# Create your views here.
+from musics.models import Music
+from musics.serializers import MusicSerializer
+from rest_framework import viewsets
+
+# Create your views here.
+class MusicViewSet(viewsets.ModelViewSet):
+    queryset = Music.objects.all()
+    serializer_class = MusicSerializer
+```
+
+
+- `get`：返回符合條件的唯一一筆資料。（注意：如果找不到符合條件的資料、或是有多筆資料符合條件，都會產生 exception）
+- `filter`：返回符合條件的陣列。如果找不到任何資料則會返回空陣列。
+
+
+code           | 作用  | 
+--------------|:-----:|
+Database.objects.get(pk=1)    | 找到第pk筆資料 | 
+Database.objects.all()   | 顯示所有資料 | 
+Database.objects.create(title='First Cup') | 建立資料 | 
+Database.objects.filter(title__contains='Trip')| 搜尋資料| 
+Database.objects.distinct()   | 去重複 | 
+
+- __contain 在乎大小寫：Database.objects.filter(name__contains="e") 
+- __icontains 不在乎大小寫：Database.objects.filter(name__icontains="e") 
+
+- querySet.distinct() 去重複
 
 ### QuerySet 是什麼？  objects.all()和objects.get()和objects.filter()
 
@@ -251,3 +299,105 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  #告訴它static在哪裡
 ```
 
+
+# 4.Serializers：把Model變成JSON囉！（Model跟View的溝通橋樑）
+
+- 專門把Model複雜的數據結構轉換成JSON或是XML之類的其他格式
+
+```py
+{
+  id:...,
+  song:...,
+  singer:...,
+  last_modify_data:...,
+  created:...
+}
+```
+如果想要這樣的JSON就可以這樣寫
+
+```py
+
+from rest_framework import serializers
+from musics.models import Music
+
+class MusicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Music
+        fields = ('id', 'song', 'singer', 'last_modify_date', 'created')
+```
+
+- `model`當中可以指定是哪個模組要序列化
+- `fields`當中可以設定JSON格式有哪些屬性。
+
+
+### 複雜的JSON格式
+
+```py
+class CaseSerializer(serializers.ModelSerializer):
+    disease = DiseaseNameSerializer()
+    test_disease = DiseaseNameSerializer()
+    symptoms = serializers.SerializerMethodField()
+    PEs = serializers.SerializerMethodField()
+    RFs = serializers.SerializerMethodField()
+```
+- SerializerMethodField() = get_XXX
+```py
+  def get_symptoms(self, obj):
+      locale = self.context['request'].query_params.get('locale', 'zh_cn')
+      queryset = Case.objects.symptoms(pk=obj.id, locale=locale)
+      print(Case.objects)
+      return queryset
+```
+
+#### Shell
+
+`python manage.py shell`
+
+```py
+from apps.data-mangers.models import Sand.Case
+Sand.objects.all() // 可以看到Sand class有的所有的物件
+Sand.object.filter(id=666),values('sand_diseases')  // 可以看到sand_diseases數值
+sand.object.create(disease_id=7,case_id=666) //創建資料
+```
+
+#### ManyToMany 欄位
+
+- 一個欄位如果是`manyTomany`可以用ManyToManyField去寫，然後透過一個`中介`的model去連到另一個
+
+```py
+class Case(models.Model):
+  sand_diseases = models.ManyToManyField(DiseaseMaster, related_name='sands', through="Sand")
+
+  class Meta:
+      db_table = "case"
+
+
+class Sand(models.Model):
+    disease = models.ForeignKey(DiseaseMaster, on_delete=models.CASCADE)
+    case = models.ForeignKey(Case, related_name='sands', on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = "case_sand"
+
+
+class DiseaseMaster(models.Model):
+    master_dis_id = models.PositiveIntegerField(primary_key=True)
+    term_name = models.CharField(max_length=255, db_index=True)
+    status = models.PositiveIntegerField()
+    icd10 = models.CharField(max_length=255, null=True, db_index=True)
+    source = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    objects = DiseaseMasterManager()
+
+    class Meta:
+        db_table = "disease_master"
+```
+
+- 在中介的model新增資料
+
+```
+import Sand from apps.....
+Sand.objects.create(master_dis_id=1, case_id=2) 
+```
