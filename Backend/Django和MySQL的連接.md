@@ -1,5 +1,4 @@
-# Django 和 MySQL的連接
-
+# Django 和 MySQL的連接並且撰寫Restful API
 
 # 設定讓Django 和 MySQL連線
 
@@ -122,18 +121,32 @@ REST_FRAMEWORK = {
 
 - 在App下面增加`serializers.py`，把model的資料轉成JSON
 
+serializers.py是專門把Model複雜的數據結構，轉換成JSON或是XML之類的其他格式
+
+```py
+{
+  url:...,
+  username:...,
+  email:...,
+  groups:...,
+}
+```
+
+如果想要這樣的JSON就可以這樣寫
+
 ```py
 from app專案.models import User, Group
 from rest_framework import serializers
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class 名稱Serializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ['url', 'username', 'email', 'groups']
 ```
 
 - 在App下面寫views，讓url引發對應指令
+- `fields`當中可以設定JSON格式有哪些屬性。
 
 ```py
 from app專案.models import User
@@ -141,11 +154,11 @@ from rest_framework import viewsets
 from tutorial.quickstart.serializers import UserSerializer
 
 
-class UserViewSet(viewsets.ModelViewSet):
+class 名稱ViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
-    queryset = User.objects.all().order_by('-date_joined')
+    queryset = User.objects.all()
     serializer_class = UserSerializer
 ```
 
@@ -162,7 +175,7 @@ router.register(r'users', views.UserViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', include(router.urls)), #要有這行
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 ```
