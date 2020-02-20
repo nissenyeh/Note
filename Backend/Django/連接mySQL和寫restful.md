@@ -119,14 +119,14 @@ REST_FRAMEWORK = {
 }
 ```
 
-## serializers
+## 加上serializers
 
 - 在App下面增加`serializers.py`，把model的資料轉成JSON
 
 
 ### 什麼是serializers？
 
-serializers是一個用來把queryset（Django中的一種資料結構）轉變成JSON（純字串）的class
+serializers是一個用來把queryset（Django中的一種資料結構，本質是一個list）轉變成JSON純文字
 
 ```py
 from rest_framework import serializers
@@ -181,8 +181,10 @@ class 名稱Serializer(serializers.HyperlinkedModelSerializer):
         fields = ['url', 'username', 'email', 'groups']
 ```
 
+## 加上Views
 - 在App下面寫views，讓url引發對應指令
 - `fields`當中可以設定JSON格式有哪些屬性。
+> 參考[文件](https://www.django-rest-framework.org/tutorial/3-class-based-views/)
 
 ```py
 from app專案.models import User
