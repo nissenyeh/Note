@@ -112,7 +112,7 @@ flex-direction 和 flex-wrap 這兩個屬性可以合併成 flex-flow 屬性。f
 }
 ```
 
-### justify-content  讓元素水平（X軸）置中
+### justify-content  可以讓元素水平（X軸）置中
 
 justify-content 可用的值
 
@@ -123,7 +123,7 @@ justify-content 可用的值
 - space-around
 - space-evenly
 
-### align-items  讓元素垂直（Ｙ軸）置中
+### align-items  可以讓元素垂直（Ｙ軸）置中
 
 - flex-start :item 會貼齊交叉軸的起點
 - flex-end :item 會貼齊交叉軸的終點
