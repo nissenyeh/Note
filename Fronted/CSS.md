@@ -126,11 +126,11 @@ justify-content 可用的值
 
 ### align-items  讓元素垂直（Ｙ軸）置中
 
-- flex-start - item 會貼齊交叉軸的起點
-- flex-end - item 會貼齊交叉軸的終點
-- center - item 會對齊交叉軸的中間
-- baseline - 先把內容對齊 baseline，item 隨著跑 (通常文字下緣對齊的地方稱為 baseline）
-- stretch - item 會延展填滿容器空間，但會尊重特別指定的 width or height (如方塊 3)
+- flex-start :item 會貼齊交叉軸的起點
+- flex-end :item 會貼齊交叉軸的終點
+- center :item 會對齊交叉軸的中間
+- baseline :先把內容對齊 baseline，item 隨著跑 (通常文字下緣對齊的地方稱為 baseline）
+- stretch :item 會延展填滿容器空間，但會尊重特別指定的 width or height (如方塊 3)
 
 ### 垂直置中
 
