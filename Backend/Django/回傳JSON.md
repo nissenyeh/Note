@@ -1,6 +1,24 @@
-# Django 要如何回傳JSON陣列和負責物件？
+# Django 要如何回傳JSON原始物件/陣列/物件？
 
-# JSON陣列
+
+# JSON 資料庫物件
+
+- `serializers` 可以直接把資料庫來的物件轉成JSON
+
+```py
+from django.core import serializers
+from django.http import HttpResponse, JsonResponse
+from course.models import Staff, ClassRecord, Class, Course
+
+def staff(request):
+    res = serializers.serialize("json", Staff.objects.all()) 
+    return HttpResponse(res)
+```
+
+
+
+# JSON 陣列
+
 需求：資料庫中有許多員工的資料，包含員工編號、名稱、職稱、到職日...等資料，現在想要回傳只有「名稱」的JSON陣列
 
 ```js
@@ -63,26 +81,18 @@ AppDef.objects.values('apptype_name')
 ```
 
 ```py
-import json
-from rest_framework import viewsets
-from rest_framework.response import Response
-from course.models import Staff
+from django.http import HttpResponse, JsonResponse
+from course.models import Staff, ClassRecord, Class, Course
 
 
-class StaffViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    def list(self, request, *args, **kwargs):
-        queryset =  Staff.objects.values('name') #回傳一個 [{'name':'員工1'},{'name':'員工2'}]的list
-        result = []
-        for i in queryset:
-            result.append(i['name']) #把name拿出來放到list中，['員工1','員工2']
+def staff(request):
+    queryset = Staff.objects.values('name')
+    result = []
+    for i in queryset:
+        result.append(i['name'])
+    res = json.dumps(result,ensure_ascii=False)
 
-        jsonResponse = json.dumps(result) #把['員工1','員工2']轉成json文字
-
-        return Response(jsonResponse)
-    
+    return HttpResponse(res)
 ```
 
 # JSON物件

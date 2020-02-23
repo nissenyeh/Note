@@ -15,7 +15,7 @@ My notes about software development
 - [Django安裝教學](Backend/Django/安裝與教學.md)
 - [Django如何和mySQL資料庫連接以及使用REST framework](Backend/Django/連接mySQL和寫restful.md)
 - [QuerySet常用的Query方法](Backend/Django/QuerySet.md)
-- [案例：如何回傳員工名稱的JSON陣列？](Backend/Django/回傳陣列.md)
+- [案例：要如何回傳JSON原始物件/陣列/物件？](Backend/Django/回傳JSON.md):
 - [Django Setting and Base Connection](Backend/Django_setting.md)
 
 
