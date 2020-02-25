@@ -17,6 +17,7 @@ My notes about software development
 - [QuerySet常用的Query方法](Backend/Django/QuerySet.md)
 - [案例：要如何回傳JSON原始物件/陣列/物件？](Backend/Django/回傳JSON.md)
 - [Django Setting and Base Connection](Backend/Django_setting.md)
+- [問題](Backend/Django/問題.md)
 
 
 ## JavaScript
