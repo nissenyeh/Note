@@ -27,7 +27,7 @@ My notes about software development
 
 ### AWS 
 
-- [如何在AWS上面開主機](雲服務/AWS/如何開主機.md)
+- [如何在AWS上面開實體（機器）](雲服務/AWS/如何開機器.md)
 
 ## JavaScript
 
