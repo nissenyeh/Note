@@ -51,6 +51,7 @@ My notes about software development
 - [What is `this` ? ](JavaScript/this.md)
 - [Question](JavaScript/Question.md)
 - [實用的JS算法](JavaScript/實用.md)
+- [編碼](JavaScript/編碼.md):百分比編碼
 
 
 ## Programming Foundation
