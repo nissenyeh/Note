@@ -58,10 +58,10 @@ My notes about software development
 
 - [Linux: Command line](Basic/commandline.md)
 - [Shell Script](Basic/ShellScript.md)
-- [Git Intro](Basic/git.md)
 - [installation](Basic/install.md)
 - [Browser](Basic/browser.md)
 - [Web Secrity](Basic/webSecrity.md)
+- [Git實用指令](Basic/git.md)
 
 ### Database & MySQL : 資料庫管理
 
