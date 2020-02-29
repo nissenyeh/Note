@@ -11,6 +11,13 @@ git reset --hard origin/master #表示把遠端的master強迫拉下來
 git reset --hard origin/<branch_name>  #表示把遠端的branch強迫拉下來
 ```
 
+### 把git add undo 
+
+- 後悔git add 
+
+```
+git reset <file> 
+```
 ### git reset  
 
 - 已經commit，想要回復之前的commit
