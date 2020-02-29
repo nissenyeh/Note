@@ -23,7 +23,7 @@ cd # change directory
 cp # copy  來源 到 目的地  例如：cp ./hi.txt  ~/
 cp -r # copy 把整個資料夾複製起來
 mv # move  來源 到 目的地  例如：mv ./hi.txt  ~/ 
-   # move 也可以重新命名
+   # move 也可以重新命名  例如：mv ./hi.txt  ./bye.txt
 cat # 把檔案內的資料列出來 例如 cat note.txt
 rm # 刪掉資料，垃圾桶只是一個假個資料夾
 rm -r # 刪掉只個資料夾
