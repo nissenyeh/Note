@@ -71,6 +71,12 @@ sudo apt-get install sl # 安裝「sl」套件
 sudo apt-get remove sl # 刪除「sl」套件
 ```
 
+砍掉佔用port的程序
+```
+sudo lsof -i :3000
+kill -9 {PID}
+```
+
 資訊顯示
 ```shell
 man ls # manual 查詢可使用參數

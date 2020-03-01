@@ -114,7 +114,7 @@ https://www.youtube.com/watch?v=QkgvM8e6rpY
 
 ### Linux : 臺大Linux系統訓練班（筆記）
 
-- [實用指令](作業系統/linux實用指令.md)：ls/cat/改名/移除
+- [實用指令](作業系統/linux實用指令.md)：ls/cat/改名/移除/ssh
 - [基本介紹](作業系統/linux基本介紹.md)
 - [實用技巧](作業系統/實用技巧.md)：如何找檔案？如何下載檔案？
 - [帳號管理與權限管理](作業系統/權限管理.md):chmod
