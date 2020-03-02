@@ -33,7 +33,8 @@ My notes about software development
 
 ### AWS 
 
-- [如何在AWS上面開實體（機器）](雲服務/AWS/如何開機器.md)
+- [如何在AWS上面開實體（機器）](Backend/雲服務/AWS/如何開機器.md)
+- [Express+MongoDB 在AWS上面的完整設定清單](Backend/雲服務/AWS/完整設定.md)
 - [MongoDB在AWS linux2上的安裝與連線](Backend/MongoDB/安裝與連線.md)
 
 ## JavaScript
