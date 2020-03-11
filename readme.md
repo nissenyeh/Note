@@ -22,6 +22,7 @@ My notes about software development
 ### Express
 
 - [Express安裝與教學](Backend/Express/安裝與啟用.md)：基本的POST/GET，如何和mongoDB連線
+- [NodeJS:聲音轉文字Google API](Backend/Nodejs/GoogleAudioAPI.md)：利用Google Speech-to-Text
 
 # DB
 
