@@ -53,6 +53,7 @@ My notes about software development
 - [Question](JavaScript/Question.md)
 - [實用的JS算法](JavaScript/實用.md)
 - [編碼](JavaScript/編碼.md):百分比編碼
+- [如何在同一個js中程式執行多的js](JavaScript/如何在同一個js中程式執行多的js.md)：其實就require就好了
 
 
 ## Programming Foundation
