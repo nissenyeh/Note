@@ -4,6 +4,12 @@
 My notes about software development 
 我的軟體開發筆記（持續更新）
 
+- 技能樹
+  - 前端：Vue.js（擅長）、Javascript（擅長）
+  - 後端：nodeJS、Django
+  - 資料庫：ER-model、MySQL、mongoDB
+- 目前在尋找全端或是後端工程師的機會
+
 
 ## Back End 
 
@@ -81,14 +87,18 @@ My notes about software development
 - [Greater China catering market entry strategy（大中華地區市場進入策略數據分析）](資料庫管理/作業/菜系分析.md)：Analyzed Greater China all restaurants data crawling from mainstream apps with SQL and delivered solutions to market entry.
 - [RDBMS資料庫淺談](資料庫管理/資料庫淺談.md)
 
-### 資料結構與演算法
+# 資料結構與演算法
 
 - [crack the coding interview](資料結構與演算法/cracking.md)：實在是一本好書！（規劃一下學習）
 - [容易忘記的Python語法](資料結構與演算法/容易忘記的Python語法.md)：面試前可以複習一下
 https://www.youtube.com/watch?v=QkgvM8e6rpY
 - [「資料結構」第一講：Data Abstraction and "bag" (1): OOA, OOD, and OOP](資料結構與演算法/資料結構01.md)
 
-#### Python 程式解題基礎班（台大資訊系統訓練班）
+## 資料結構與演算法筆記（台大資工系）
+
+- [資料結構與演算法](資料結構與演算法/DSA.md) *持續更新
+
+## Python 程式解題基礎班（台大資訊系統訓練班）
 
 
 - [課程筆記：complexity、 array、dynamic array、two pointers、linked list、tree、recursion、sort、binary search、hash table、queue、stack、dynamic programming](資料結構與演算法/Python.md)
