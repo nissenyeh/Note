@@ -91,7 +91,7 @@ https://www.youtube.com/watch?v=QkgvM8e6rpY
 #### Python 程式解題基礎班（台大資訊系統訓練班）
 
 
-- [課程筆記：演算法的複雜度分析 (complexity)、陣列 (array) 與動態陣列 (dynamic array)、雙指標法 (two pointers)、串列 (linked list) 與樹 (tree)、遞迴 (recursion)、排序 (sort) 與二元搜尋法 (binary search)、雜湊表 (hash table)、佇列 (queue) 、堆疊 (stack)、動態規劃 (dynamic programming)](資料結構與演算法/Python.md)
+- [課程筆記：complexity、 array、dynamic array、two pointers、linked list、tree、recursion、sort、binary search、hash table、queue、stack、dynamic programming](資料結構與演算法/Python.md)
 
 ### Leetcode
 - [leetCode:easy](leetcode/easy.md)
