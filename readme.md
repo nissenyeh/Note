@@ -142,7 +142,11 @@ https://www.youtube.com/watch?v=QkgvM8e6rpY
 - [雲服務介紹](作業系統/雲服務介紹.md)
 - [shellscript](作業系統/shellscript.md)
 - [VM](作業系統/linux其他.md):vm 
-- [找不到指令怎麼辦？](作業系統/找不到指令.md)：設定環境路徑 
+- [找不到指令怎麼辦？](作業系統/找不到指令.md)：設定環境路徑
+
+### 資管系：作業系統（筆記）
+
+- [作業系統](作業系統/作業系統課程/作業系統.md)
 
 ### Computer network: 台大計算機網路課程（筆記）
 
