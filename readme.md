@@ -83,11 +83,15 @@ My notes about software development
 
 ### 資料結構與演算法
 
-
 - [crack the coding interview](資料結構與演算法/cracking.md)：實在是一本好書！（規劃一下學習）
 - [容易忘記的Python語法](資料結構與演算法/容易忘記的Python語法.md)：面試前可以複習一下
 https://www.youtube.com/watch?v=QkgvM8e6rpY
 - [「資料結構」第一講：Data Abstraction and "bag" (1): OOA, OOD, and OOP](資料結構與演算法/資料結構01.md)
+
+#### Python 程式解題基礎班（台大資訊系統訓練班）
+
+
+- [課程筆記：演算法的複雜度分析 (complexity)、陣列 (array) 與動態陣列 (dynamic array)、雙指標法 (two pointers)、串列 (linked list) 與樹 (tree)、遞迴 (recursion)、排序 (sort) 與二元搜尋法 (binary search)、雜湊表 (hash table)、佇列 (queue) 、堆疊 (stack)、動態規劃 (dynamic programming)](資料結構與演算法/Python.md)
 
 ### Leetcode
 - [leetCode:easy](leetcode/easy.md)
