@@ -5,10 +5,9 @@ My notes about software development
 我的軟體開發筆記（持續更新）
 
 - 技能樹
-  - 前端：Vue.js（擅長）、Javascript（擅長）
+  - 前端：Vue.js、Javascript
   - 後端：nodeJS、Django
   - 資料庫：ER-model、MySQL、mongoDB
-- 目前在尋找全端或是後端工程師的機會
 
 
 ## Back End 
